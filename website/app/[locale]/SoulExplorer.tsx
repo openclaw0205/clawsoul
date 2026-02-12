@@ -96,8 +96,8 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
         if (categoryTags) {
           const hasCategory = soul.tags.some((tag) =>
             categoryTags.some((catTag) =>
-              tag.toLowerCase().includes(catTag.toLowerCase())
-            )
+              tag.toLowerCase().includes(catTag.toLowerCase()),
+            ),
           );
           if (!hasCategory) return false;
         }
@@ -137,7 +137,9 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
           </h1>
           <p className="text-lg text-gray-400 mb-8">
             {t.hero.description}{" "}
-            <span className="text-orange-400 font-semibold">{souls.length}</span>{" "}
+            <span className="text-orange-400 font-semibold">
+              {souls.length}
+            </span>{" "}
             {t.hero.descriptionSuffix}
             <br />
             {t.hero.descriptionSub}
@@ -170,8 +172,18 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
                 onClick={() => setSearchQuery("")}
                 className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-white transition"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
             )}
@@ -240,8 +252,18 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
                 className="inline-flex items-center gap-1 px-3 py-1 bg-orange-500/20 text-orange-400 text-sm rounded-full hover:bg-orange-500/30 transition"
               >
                 {activeTag}
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
             </div>
@@ -384,13 +406,15 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
       </section>
 
       {/* FAQ Section */}
-      <section className="px-6 lg:px-12 py-16 border-t border-gray-800 bg-gray-900/50">
-        <div className="max-w-4xl mx-auto">
+      <section className="px-6 lg:px-12 py-16 border-t border-gray-800">
+        <div className="bg-gray-900/50 rounded-2xl p-8 lg:p-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">{t.faq.title}</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">
+              {t.faq.title}
+            </h2>
             <p className="text-gray-400">{t.faq.subtitle}</p>
           </div>
-          <div className="grid gap-6">
+          <div className="grid gap-6 max-w-4xl mx-auto">
             {t.faq.items.map((item, index) => (
               <div
                 key={index}
@@ -404,9 +428,7 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
                     <h3 className="text-lg font-semibold text-white mb-2">
                       {item.q}
                     </h3>
-                    <p className="text-gray-400 leading-relaxed">
-                      {item.a}
-                    </p>
+                    <p className="text-gray-400 leading-relaxed">{item.a}</p>
                   </div>
                 </div>
               </div>

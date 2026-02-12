@@ -92,25 +92,6 @@ export default async function SoulPage({ params }: PageProps) {
               <span className="text-2xl">🦞</span>
               <span className="text-lg font-bold text-white">ClawSoul</span>
             </Link>
-            <Link
-              href={`/${locale}`}
-              className="hidden sm:flex items-center gap-2 text-gray-400 hover:text-white transition"
-            >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-              {t.detail.backToList}
-            </Link>
           </div>
           <div className="flex items-center gap-4">
             {/* Language Switcher */}
@@ -142,6 +123,46 @@ export default async function SoulPage({ params }: PageProps) {
 
       {/* Content */}
       <main className="max-w-4xl mx-auto px-6 py-12 space-y-10">
+        {/* Breadcrumb */}
+        <nav className="flex items-center gap-2 text-sm text-gray-500">
+          <Link href={`/${locale}`} className="hover:text-white transition">
+            {t.nav.home}
+          </Link>
+          <svg
+            className="w-3.5 h-3.5 text-gray-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+          <Link
+            href={`/${locale}/souls`}
+            className="hover:text-white transition"
+          >
+            {t.nav.souls}
+          </Link>
+          <svg
+            className="w-3.5 h-3.5 text-gray-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+          <span className="text-gray-300">{manifest.display_name}</span>
+        </nav>
+
         {/* ── Section 1: Basic Info ── */}
         <section>
           <div className="flex items-start gap-4 mb-6">
@@ -242,21 +263,33 @@ export default async function SoulPage({ params }: PageProps) {
         </section>
 
         {/* ── Section 4: FAQ ── */}
-        <section className="bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden">
-          <div className="px-6 py-4 border-b border-gray-800">
-            <h2 className="text-lg font-semibold text-white flex items-center gap-2">
-              ❓ {t.faq.title}
+        <section>
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-white mb-2">
+              {t.faq.title}
             </h2>
-            <p className="text-sm text-gray-500 mt-1">{t.faq.subtitle}</p>
+            <p className="text-sm text-gray-500">{t.faq.subtitle}</p>
           </div>
-          <div className="divide-y divide-gray-800">
+          <div className="grid gap-4">
             {t.faq.items.map(
               (item: { q: string; a: string }, index: number) => (
-                <div key={index} className="px-6 py-5">
-                  <h3 className="text-white font-medium mb-2">{item.q}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    {item.a}
-                  </p>
+                <div
+                  key={index}
+                  className="bg-gray-900 rounded-xl p-5 border border-gray-800"
+                >
+                  <div className="flex gap-4">
+                    <div className="w-7 h-7 bg-orange-500/20 text-orange-400 rounded-lg flex items-center justify-center text-sm font-bold shrink-0">
+                      {index + 1}
+                    </div>
+                    <div>
+                      <h3 className="text-white font-medium mb-1.5">
+                        {item.q}
+                      </h3>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        {item.a}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ),
             )}
