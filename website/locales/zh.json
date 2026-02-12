@@ -44,6 +44,36 @@
   "footer": {
     "license": "MIT 许可证"
   },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "关于 ClawSoul 的常见问题解答",
+    "items": [
+      {
+        "q": "什么是 Soul（灵魂）？",
+        "a": "Soul 是 OpenClaw AI 助理的预配置人格模板。它包含人格定义、行为准则、预置知识和依赖技能——让你的 AI 瞬间成为特定领域的专家。"
+      },
+      {
+        "q": "什么是 OpenClaw？",
+        "a": "OpenClaw 是一个开源 AI Agent 框架，支持本地或云端运行 AI 助理。它兼容多种大模型提供商，可通过技能和工具扩展功能。ClawSoul 为 OpenClaw 提供开箱即用的人格模板。"
+      },
+      {
+        "q": "如何安装 Soul？",
+        "a": "目前可以手动将 soul 文件复制到 OpenClaw 工作目录（~/.openclaw/workspace/）。我们正在开发一键安装命令（openclaw soul add <name>），敬请期待！"
+      },
+      {
+        "q": "Soul 包含哪些文件？",
+        "a": "一个 Soul 包包含：manifest.json（元数据）、SOUL.md（人格核心），以及可选的 AGENTS.md（行为准则）、MEMORY.md（预置知识）、skills.txt（依赖技能列表）。"
+      },
+      {
+        "q": "如何提交自己的 Soul？",
+        "a": "点击「提交灵魂」按钮并按引导操作。你的 OpenClaw 助理可以帮你整理文件、翻译内容并创建 GitHub Pull Request。也可以直接在我们的 GitHub 仓库手动创建 Issue。"
+      },
+      {
+        "q": "ClawSoul 免费吗？",
+        "a": "完全免费！ClawSoul 是 100% 免费开源项目，采用 MIT 许可证。所有灵魂模板均由社区贡献，可自由使用、修改和再分发。"
+      }
+    ]
+  },
   "submit": {
     "title": "分享你的灵魂模板",
     "subtitle": "让你的 OpenClaw 助理帮你完成提交",

@@ -44,6 +44,36 @@
   "footer": {
     "license": "MIT License"
   },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Frequently Asked Questions about ClawSoul",
+    "items": [
+      {
+        "q": "What is a Soul?",
+        "a": "A Soul is a pre-configured personality template for OpenClaw AI assistants. It includes persona definitions, behavioral guidelines, pre-loaded knowledge, and required skills - giving your AI instant expertise in specific domains."
+      },
+      {
+        "q": "What is OpenClaw?",
+        "a": "OpenClaw is an open-source AI agent framework that lets you run AI assistants locally or in the cloud. It supports multiple LLM providers and can be extended with skills and tools. ClawSoul provides ready-made personalities for OpenClaw."
+      },
+      {
+        "q": "How do I install a Soul?",
+        "a": "Currently, you can manually copy the soul files to your OpenClaw workspace (~/.openclaw/workspace/). We're building a CLI tool (openclaw soul add <name>) for one-click installation - coming soon!"
+      },
+      {
+        "q": "What files are included in a Soul?",
+        "a": "A Soul package contains: manifest.json (metadata), SOUL.md (personality core), and optionally AGENTS.md (behavior rules), MEMORY.md (pre-loaded knowledge), and skills.txt (required skills list)."
+      },
+      {
+        "q": "How do I submit my own Soul?",
+        "a": "Click 'Submit Soul' and follow the guide. Your OpenClaw assistant can help you organize files, translate content, and create a GitHub Pull Request. You can also manually create an issue on our GitHub repo."
+      },
+      {
+        "q": "Is ClawSoul free?",
+        "a": "Yes! ClawSoul is 100% free and open-source under the MIT license. All soul templates are community-contributed and free to use, modify, and redistribute."
+      }
+    ]
+  },
   "submit": {
     "title": "Share Your Soul Template",
     "subtitle": "Let your OpenClaw assistant handle the submission",

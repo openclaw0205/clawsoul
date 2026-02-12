@@ -12,16 +12,11 @@ interface SoulManifest {
   tags: string[];
 }
 
-interface SoulExplorerProps {
+interface SoulsExplorerProps {
   souls: SoulManifest[];
   locale: string;
   t: {
     hero: {
-      title: string;
-      titleHighlight: string;
-      description: string;
-      descriptionSuffix: string;
-      descriptionSub: string;
       searchPlaceholder: string;
     };
     filters: {
@@ -42,11 +37,6 @@ interface SoulExplorerProps {
       description: string;
       button: string;
     };
-    faq: {
-      title: string;
-      subtitle: string;
-      items: Array<{ q: string; a: string }>;
-    };
   };
 }
 
@@ -64,7 +54,7 @@ const tagCategories: Record<string, string[]> = {
   development: ["code", "programming", "developer", "tech", "engineering"],
 };
 
-export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
+export default function SoulsExplorer({ souls, locale, t }: SoulsExplorerProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeFilter, setActiveFilter] = useState("all");
   const [activeTag, setActiveTag] = useState<string | null>(null);
@@ -126,55 +116,52 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="px-6 lg:px-12 py-12 lg:py-16 border-b border-gray-800">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
-            {t.hero.title}{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">
-              {t.hero.titleHighlight}
-            </span>
-          </h1>
-          <p className="text-lg text-gray-400 mb-8">
-            {t.hero.description}{" "}
-            <span className="text-orange-400 font-semibold">{souls.length}</span>{" "}
-            {t.hero.descriptionSuffix}
-            <br />
-            {t.hero.descriptionSub}
-          </p>
+      {/* Header Section */}
+      <section className="px-6 lg:px-12 py-8 border-b border-gray-800">
+        <div className="max-w-6xl">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div>
+              <h1 className="text-3xl font-bold text-white mb-2">
+                {t.souls.title}
+              </h1>
+              <p className="text-gray-400">
+                {souls.length} {t.souls.available}
+              </p>
+            </div>
 
-          {/* Search Box */}
-          <div className="relative max-w-xl">
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder={t.hero.searchPlaceholder}
-              className="w-full px-5 py-3.5 pl-12 bg-gray-800 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition"
-            />
-            <svg
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            {/* Search Box */}
+            <div className="relative w-full lg:w-96">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder={t.hero.searchPlaceholder}
+                className="w-full px-5 py-3 pl-12 bg-gray-800 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition"
               />
-            </svg>
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery("")}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-white transition"
+              <svg
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            )}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-white transition"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Filter Tabs */}
@@ -270,9 +257,8 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
       </section>
 
       {/* Soul Cards Grid */}
-      <section id="souls" className="px-6 lg:px-12 py-12">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold text-white">{t.souls.title}</h2>
+      <section className="px-6 lg:px-12 py-8">
+        <div className="flex items-center justify-between mb-6">
           <span className="text-sm text-gray-500">
             {filteredSouls.length} / {souls.length} {t.souls.available}
           </span>
@@ -294,7 +280,7 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
             </button>
           </div>
         ) : (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredSouls.map((soul) => (
               <Link
                 key={soul.name}
@@ -380,38 +366,6 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
             </svg>
             {t.cta.button}
           </Link>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="px-6 lg:px-12 py-16 border-t border-gray-800 bg-gray-900/50">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">{t.faq.title}</h2>
-            <p className="text-gray-400">{t.faq.subtitle}</p>
-          </div>
-          <div className="grid gap-6">
-            {t.faq.items.map((item, index) => (
-              <div
-                key={index}
-                className="bg-gray-900 rounded-xl p-6 border border-gray-800"
-              >
-                <div className="flex gap-4">
-                  <div className="w-8 h-8 bg-orange-500/20 text-orange-400 rounded-lg flex items-center justify-center font-bold shrink-0">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-white mb-2">
-                      {item.q}
-                    </h3>
-                    <p className="text-gray-400 leading-relaxed">
-                      {item.a}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
     </>
