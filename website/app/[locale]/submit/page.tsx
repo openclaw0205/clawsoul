@@ -1,20 +1,20 @@
+"use client";
+
 import Link from "next/link";
-import { getDictionary, locales, type Locale } from "@/lib/i18n";
-
-interface PageProps {
-  params: Promise<{ locale: Locale }>;
-}
-
-export async function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
+import { clientTranslations } from "@/lib/i18n-client";
+import { useParams } from "next/navigation";
 
 const guideUrl = "https://raw.githubusercontent.com/openclaw0205/clawsoul/main/SUBMIT_GUIDE.md";
 
-export default async function SubmitPage({ params }: PageProps) {
-  const { locale } = await params;
-  const t = getDictionary(locale);
+export default function SubmitPage() {
+  const params = useParams();
+  const locale = (params.locale as "en" | "zh") || "en";
+  const t = clientTranslations[locale];
   const isZh = locale === "zh";
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(guideUrl);
+  };
 
   return (
     <div className="min-h-screen bg-gray-950">
@@ -29,7 +29,7 @@ export default async function SubmitPage({ params }: PageProps) {
             href={`/${locale}`}
             className="text-gray-400 hover:text-white transition text-sm"
           >
-            {isZh ? "← 返回首页" : "← Back to home"}
+            {isZh ? t.back_home_zh : t.back_home_en}
           </Link>
         </div>
       </header>
@@ -41,10 +41,10 @@ export default async function SubmitPage({ params }: PageProps) {
             🎁
           </div>
           <h1 className="text-4xl font-bold text-white mb-4">
-            {t.submit.title}
+            {t.submit_title}
           </h1>
           <p className="text-xl text-gray-400">
-            {t.submit.subtitle}
+            {t.submit_subtitle}
           </p>
         </div>
 
@@ -58,10 +58,10 @@ export default async function SubmitPage({ params }: PageProps) {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white mb-2">
-                  {t.submit.step1}
+                  {t.submit_step1}
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  {t.submit.step1Desc}
+                  {t.submit_step1Desc}
                 </p>
               </div>
             </div>
@@ -75,9 +75,9 @@ export default async function SubmitPage({ params }: PageProps) {
               </code>
               <button
                 className="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium rounded-lg transition shrink-0"
-                onClick={() => {}}
+                onClick={copyToClipboard}
               >
-                {t.submit.copy}
+                {t.submit_copy}
               </button>
             </div>
           </div>
@@ -90,15 +90,15 @@ export default async function SubmitPage({ params }: PageProps) {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white mb-2">
-                  {t.submit.step2}
+                  {t.submit_step2}
                 </h3>
                 <p className="text-gray-400 text-sm mb-4">
-                  {t.submit.step2Desc}
+                  {t.submit_step2Desc}
                 </p>
                 <div className="bg-gray-950 rounded-lg p-4 border border-gray-800">
                   <p className="text-gray-300 text-sm">
                     {isZh ? (
-                      <>💬 示例消息：<br/><br/>"读一下这个链接，帮我把「编程大师」人格提交到 ClawSoul"</>
+                      <>💬 示例消息：<br/><br/>"读一下这个链接，帮我把『编程大师』人格提交到 ClawSoul"</>
                     ) : (
                       <>💬 Example message:<br/><br/>"Read this link and help me submit my 'Code Master' persona to ClawSoul"</>
                     )}
@@ -116,10 +116,10 @@ export default async function SubmitPage({ params }: PageProps) {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white mb-2">
-                  {t.submit.step3}
+                  {t.submit_step3}
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  {t.submit.step3Desc}
+                  {t.submit_step3Desc}
                 </p>
               </div>
             </div>
@@ -129,10 +129,10 @@ export default async function SubmitPage({ params }: PageProps) {
         {/* Note */}
         <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-6">
           <h4 className="text-blue-400 font-semibold mb-2">
-            💡 {t.submit.tip}
+            💡 {t.submit_tip}
           </h4>
           <p className="text-gray-400 text-sm">
-            {t.submit.tipDesc}
+            {t.submit_tipDesc}
           </p>
         </div>
       </main>
