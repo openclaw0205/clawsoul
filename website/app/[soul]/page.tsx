@@ -17,6 +17,14 @@ interface PageProps {
   params: Promise<{ soul: string }>;
 }
 
+// Soul emoji mapping
+const soulEmojis: Record<string, string> = {
+  "pm-expert": "📋",
+  "seo-master": "🔍",
+  "code-mentor": "💻",
+  "life-coach": "🌟",
+};
+
 async function getSoul(soulName: string) {
   const soulDir = path.join(process.cwd(), "souls", soulName);
 
@@ -57,111 +65,191 @@ export default async function SoulPage({ params }: PageProps) {
     notFound();
   }
 
-  const { manifest, soulMd } = soul;
+  const { manifest, soulMd, agentsMd, memoryMd } = soul;
   const installCommand = `curl -fsSL https://raw.githubusercontent.com/openclaw0205/clawsoul/main/scripts/install.sh | bash -s ${manifest.name}`;
-  const manualCommand = `git clone https://github.com/openclaw0205/clawsoul.git && cp -r clawsoul/souls/${manifest.name}/* ~/.openclaw/workspace/`;
+  const manualCommand = `git clone https://github.com/openclaw0205/clawsoul.git
+cp -r clawsoul/souls/${manifest.name}/* ~/.openclaw/workspace/`;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
+    <div className="min-h-screen bg-gray-950">
       {/* Header */}
-      <header className="border-b border-gray-700">
-        <div className="max-w-4xl mx-auto px-6 py-6">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition"
+      <header className="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-gray-800">
+        <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-6">
+            <Link href="/" className="flex items-center gap-2">
+              <span className="text-2xl">🦞</span>
+              <span className="text-lg font-bold text-white">ClawSoul</span>
+            </Link>
+            <Link
+              href="/"
+              className="hidden sm:flex items-center gap-2 text-gray-400 hover:text-white transition"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Back to list
+            </Link>
+          </div>
+          <a
+            href={`https://github.com/openclaw0205/clawsoul/tree/main/souls/${manifest.name}`}
+            target="_blank"
+            className="text-sm text-gray-400 hover:text-white transition"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Back to list
-          </Link>
+            View on GitHub
+          </a>
         </div>
       </header>
 
       {/* Content */}
-      <main className="max-w-4xl mx-auto px-6 py-12">
-        {/* Title */}
-        <div className="mb-8">
-          <div className="flex items-center gap-4 mb-4">
-            <h1 className="text-4xl font-bold text-white">{manifest.display_name}</h1>
-            <span className="px-3 py-1 text-sm bg-gray-700 text-gray-300 rounded-full">
-              v{manifest.version}
-            </span>
-          </div>
-          <p className="text-xl text-gray-400">{manifest.description}</p>
-          <div className="flex flex-wrap gap-2 mt-4">
-            {manifest.tags.map((tag) => (
-              <span
-                key={tag}
-                className="px-3 py-1 text-sm bg-orange-500/20 text-orange-400 rounded-full"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Install */}
-        <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 mb-8">
-          <h2 className="text-xl font-semibold text-white mb-4">📦 Installation</h2>
-
-          <div className="mb-6">
-            <h3 className="text-sm text-gray-400 mb-2">One-line install (recommended)</h3>
-            <div className="bg-gray-900 rounded-lg p-4 font-mono text-sm text-green-400 overflow-x-auto">
-              {installCommand}
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-sm text-gray-400 mb-2">Manual install</h3>
-            <div className="bg-gray-900 rounded-lg p-4 font-mono text-sm text-gray-300 overflow-x-auto">
-              {manualCommand}
-            </div>
-          </div>
-
-          {manifest.skills.length > 0 && (
-            <div className="mt-6 pt-6 border-t border-gray-700">
-              <h3 className="text-sm text-gray-400 mb-2">Required skills</h3>
-              <div className="flex flex-wrap gap-2">
-                {manifest.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 text-sm bg-blue-500/20 text-blue-400 rounded"
+      <main className="max-w-5xl mx-auto px-6 py-12">
+        {/* Hero */}
+        <div className="flex flex-col md:flex-row gap-8 mb-12">
+          {/* Left: Info */}
+          <div className="flex-1">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center text-3xl shrink-0">
+                {soulEmojis[manifest.name] || "🦞"}
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold text-white mb-2">{manifest.display_name}</h1>
+                <p className="text-gray-400">
+                  by{" "}
+                  <a
+                    href={`https://github.com/${manifest.author}`}
+                    target="_blank"
+                    className="text-orange-400 hover:underline"
                   >
-                    {skill}
-                  </span>
-                ))}
+                    @{manifest.author}
+                  </a>
+                  <span className="mx-2">·</span>
+                  <span className="text-gray-500">v{manifest.version}</span>
+                </p>
               </div>
             </div>
-          )}
-        </div>
 
-        {/* Preview */}
-        {soulMd && (
-          <div className="bg-gray-800 rounded-xl p-6 border border-gray-700">
-            <h2 className="text-xl font-semibold text-white mb-4">👀 Preview SOUL.md</h2>
-            <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
-              <pre className="text-gray-300 text-sm whitespace-pre-wrap font-mono">
-                {soulMd}
-              </pre>
+            <p className="text-lg text-gray-300 mb-6">{manifest.description}</p>
+
+            {/* Tags */}
+            <div className="flex flex-wrap gap-2 mb-6">
+              {manifest.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="px-3 py-1.5 text-sm bg-orange-500/10 text-orange-400 rounded-full border border-orange-500/20"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            {/* Required Skills */}
+            {manifest.skills.length > 0 && (
+              <div className="flex items-center gap-3">
+                <span className="text-sm text-gray-500">Required skills:</span>
+                <div className="flex gap-2">
+                  {manifest.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-3 py-1 text-sm bg-blue-500/10 text-blue-400 rounded-md border border-blue-500/20"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Right: Install Card */}
+          <div className="md:w-96">
+            <div className="bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden">
+              <div className="px-6 py-4 border-b border-gray-800">
+                <h2 className="text-lg font-semibold text-white">📦 Installation</h2>
+              </div>
+              <div className="p-6 space-y-6">
+                {/* One-line install */}
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-sm text-gray-400">One-line install</span>
+                    <span className="text-xs text-green-400 bg-green-400/10 px-2 py-0.5 rounded">Recommended</span>
+                  </div>
+                  <div className="bg-gray-950 rounded-lg p-4 font-mono text-xs text-green-400 overflow-x-auto border border-gray-800">
+                    {installCommand}
+                  </div>
+                </div>
+
+                {/* Manual install */}
+                <div>
+                  <span className="text-sm text-gray-400 block mb-2">Manual install</span>
+                  <div className="bg-gray-950 rounded-lg p-4 font-mono text-xs text-gray-400 overflow-x-auto border border-gray-800 whitespace-pre">
+                    {manualCommand}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        )}
+        </div>
 
-        {/* Author */}
-        <div className="mt-8 text-center text-gray-500">
-          <p>
-            Created by{" "}
-            <a
-              href={`https://github.com/${manifest.author}`}
-              target="_blank"
-              className="text-orange-400 hover:underline"
-            >
-              @{manifest.author}
-            </a>
-          </p>
+        {/* File Tabs */}
+        <div className="bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden">
+          <div className="flex border-b border-gray-800 overflow-x-auto">
+            {soulMd && (
+              <button className="px-6 py-3 text-sm font-medium text-orange-400 border-b-2 border-orange-400 bg-orange-400/5">
+                SOUL.md
+              </button>
+            )}
+            {agentsMd && (
+              <button className="px-6 py-3 text-sm font-medium text-gray-400 hover:text-white transition">
+                AGENTS.md
+              </button>
+            )}
+            {memoryMd && (
+              <button className="px-6 py-3 text-sm font-medium text-gray-400 hover:text-white transition">
+                MEMORY.md
+              </button>
+            )}
+          </div>
+
+          {/* File Content */}
+          <div className="p-6 max-h-[600px] overflow-y-auto">
+            <pre className="text-gray-300 text-sm whitespace-pre-wrap font-mono leading-relaxed">
+              {soulMd}
+            </pre>
+          </div>
+        </div>
+
+        {/* Back CTA */}
+        <div className="mt-12 text-center">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-lg transition"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Explore More Souls
+          </Link>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-800 mt-12">
+        <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+          <div className="flex items-center gap-2">
+            <span>🦞</span>
+            <span>ClawSoul</span>
+            <span>·</span>
+            <span>MIT License</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <a href="https://github.com/openclaw0205/clawsoul" target="_blank" className="hover:text-white transition">
+              GitHub
+            </a>
+            <a href="https://openclaw.ai" target="_blank" className="hover:text-white transition">
+              OpenClaw
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
