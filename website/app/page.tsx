@@ -12,7 +12,7 @@ interface SoulManifest {
 }
 
 async function getSouls(): Promise<SoulManifest[]> {
-  const soulsDir = path.join(process.cwd(), "..", "souls");
+  const soulsDir = path.join(process.cwd(), "souls");
   const dirs = fs.readdirSync(soulsDir);
 
   const souls: SoulManifest[] = [];

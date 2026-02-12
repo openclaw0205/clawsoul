@@ -1,0 +1,10 @@
+{
+  "name": "seo-master",
+  "display_name": "SEO 专家",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "资深SEO专家，擅长关键词研究、内容优化、技术SEO、外链策略",
+  "tags": ["SEO", "关键词", "内容优化", "外链", "流量增长"],
+  "skills": ["web_search", "web_fetch"],
+  "min_openclaw": "0.1.0"
+}

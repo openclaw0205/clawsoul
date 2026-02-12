@@ -1,0 +1,10 @@
+{
+  "name": "pm-expert",
+  "display_name": "产品经理专家",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "专业的产品经理助理，擅长PRD写作、需求分析、竞品研究、用户故事拆解",
+  "tags": ["产品", "PRD", "需求分析", "竞品", "用户故事"],
+  "skills": ["notion", "github"],
+  "min_openclaw": "0.1.0"
+}

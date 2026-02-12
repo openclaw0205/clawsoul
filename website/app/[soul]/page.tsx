@@ -18,7 +18,7 @@ interface PageProps {
 }
 
 async function getSoul(soulName: string) {
-  const soulDir = path.join(process.cwd(), "..", "souls", soulName);
+  const soulDir = path.join(process.cwd(), "souls", soulName);
 
   if (!fs.existsSync(soulDir)) {
     return null;
@@ -44,7 +44,7 @@ async function getSoul(soulName: string) {
 }
 
 export async function generateStaticParams() {
-  const soulsDir = path.join(process.cwd(), "..", "souls");
+  const soulsDir = path.join(process.cwd(), "souls");
   const dirs = fs.readdirSync(soulsDir);
   return dirs.map((soul) => ({ soul }));
 }
