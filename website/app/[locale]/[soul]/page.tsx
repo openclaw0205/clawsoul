@@ -5,6 +5,17 @@ import { notFound } from "next/navigation";
 import { getDictionary, locales, type Locale } from "@/lib/i18n";
 import FileTabs from "@/components/FileTabs";
 
+interface FaqItem {
+  q: string;
+  a: string;
+}
+
+interface FaqContent {
+  title: string;
+  subtitle: string;
+  items: FaqItem[];
+}
+
 interface SoulManifest {
   name: string;
   display_name: string;
@@ -13,6 +24,10 @@ interface SoulManifest {
   description: string;
   tags: string[];
   skills: string[];
+  faq?: {
+    en: FaqContent;
+    zh: FaqContent;
+  };
 }
 
 interface PageProps {
@@ -263,38 +278,43 @@ export default async function SoulPage({ params }: PageProps) {
         </section>
 
         {/* ── Section 4: FAQ ── */}
-        <section>
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-white mb-2">
-              {t.faq.title}
-            </h2>
-            <p className="text-sm text-gray-500">{t.faq.subtitle}</p>
-          </div>
-          <div className="grid gap-4">
-            {t.faq.items.map(
-              (item: { q: string; a: string }, index: number) => (
-                <div
-                  key={index}
-                  className="bg-gray-900 rounded-xl p-5 border border-gray-800"
-                >
-                  <div className="flex gap-4">
-                    <div className="w-7 h-7 bg-orange-500/20 text-orange-400 rounded-lg flex items-center justify-center text-sm font-bold shrink-0">
-                      {index + 1}
+        {(() => {
+          const faq = manifest.faq?.[locale] || t.faq;
+          return (
+            <section>
+              <div className="text-center mb-8">
+                <h2 className="text-2xl font-bold text-white mb-2">
+                  {faq.title}
+                </h2>
+                <p className="text-sm text-gray-500">{faq.subtitle}</p>
+              </div>
+              <div className="grid gap-4">
+                {faq.items.map(
+                  (item: { q: string; a: string }, index: number) => (
+                    <div
+                      key={index}
+                      className="bg-gray-900 rounded-xl p-5 border border-gray-800"
+                    >
+                      <div className="flex gap-4">
+                        <div className="w-7 h-7 bg-orange-500/20 text-orange-400 rounded-lg flex items-center justify-center text-sm font-bold shrink-0">
+                          {index + 1}
+                        </div>
+                        <div>
+                          <h3 className="text-white font-medium mb-1.5">
+                            {item.q}
+                          </h3>
+                          <p className="text-gray-400 text-sm leading-relaxed">
+                            {item.a}
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-white font-medium mb-1.5">
-                        {item.q}
-                      </h3>
-                      <p className="text-gray-400 text-sm leading-relaxed">
-                        {item.a}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ),
-            )}
-          </div>
-        </section>
+                  ),
+                )}
+              </div>
+            </section>
+          );
+        })()}
 
         {/* Back CTA */}
         <div className="text-center pt-2">

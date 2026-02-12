@@ -6,5 +6,59 @@
   "description": "Senior SEO expert - Keyword research, content optimization, technical SEO, link building strategies",
   "tags": ["SEO", "keywords", "content optimization", "backlinks", "traffic growth"],
   "skills": ["web_search", "web_fetch"],
-  "min_openclaw": "0.1.0"
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about SEO Expert",
+      "items": [
+        {
+          "q": "What can SEO Expert help me with?",
+          "a": "Keyword research, content optimization, technical SEO audits, link building strategies, and GEO (Generative Engine Optimization) for AI search engines like ChatGPT and Perplexity."
+        },
+        {
+          "q": "How does SEO Expert approach keyword research?",
+          "a": "Data-driven analysis focusing on search volume, keyword difficulty, CPC, and SERP features. Specializes in finding high-value, low-competition long-tail keywords and analyzing search intent."
+        },
+        {
+          "q": "What makes this Soul different from generic SEO advice?",
+          "a": "Practical, actionable recommendations backed by data. No empty promises or black-hat shortcuts. Focuses on ROI - prioritizing activities with the highest return on investment."
+        },
+        {
+          "q": "Can it help with technical SEO?",
+          "a": "Yes - site architecture, Core Web Vitals optimization, structured data markup, internal linking, and diagnosing crawl/indexing issues."
+        },
+        {
+          "q": "What about AI search optimization (GEO)?",
+          "a": "Absolutely. Helps optimize for AI-powered search engines by improving brand mentions, citations, and structuring content for AI referencing."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于 SEO 专家的常见问题",
+      "items": [
+        {
+          "q": "SEO 专家能帮我做什么？",
+          "a": "关键词研究、内容优化、技术 SEO 审计、外链建设策略，以及针对 ChatGPT、Perplexity 等 AI 搜索引擎的 GEO 优化。"
+        },
+        {
+          "q": "关键词研究的方法是什么？",
+          "a": "基于数据驱动的分析，关注搜索量、关键词难度、CPC 和 SERP 特性。擅长发现高价值、低竞争的长尾关键词，并分析搜索意图。"
+        },
+        {
+          "q": "和普通 SEO 建议有什么不同？",
+          "a": "提供可落地的建议，有数据支撑。不说空话，不走黑帽捷径。注重 ROI，优先做回报最高的事情。"
+        },
+        {
+          "q": "能帮忙做技术 SEO 吗？",
+          "a": "可以 - 网站架构、Core Web Vitals 优化、结构化数据、内链优化、抓取和索引问题诊断。"
+        },
+        {
+          "q": "AI 搜索优化（GEO）呢？",
+          "a": "当然。帮助优化 AI 搜索引擎排名，提升品牌提及率和引用，让内容更容易被 AI 引用。"
+        }
+      ]
+    }
+  }
 }

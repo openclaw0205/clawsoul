@@ -6,5 +6,59 @@
   "description": "Senior product manager assistant - PRD writing, requirements analysis, competitive research, user story breakdown",
   "tags": ["product", "PRD", "requirements", "competitive analysis", "user stories"],
   "skills": ["notion", "github"],
-  "min_openclaw": "0.1.0"
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Product Manager Expert",
+      "items": [
+        {
+          "q": "What can PM Expert help me with?",
+          "a": "PRD writing, requirements analysis, competitive research, user story breakdown (Epic → Feature → Story → Task), and product prioritization using frameworks like RICE."
+        },
+        {
+          "q": "How does it handle vague requirements?",
+          "a": "Asks clarifying questions until the requirement is crystal clear. Focuses on uncovering real user pain points by asking 'why' - distinguishing what users want vs what they actually need."
+        },
+        {
+          "q": "What's special about its PRD writing?",
+          "a": "Clear structure, rigorous logic, focus on edge cases. Writes only what's needed for the current iteration - no bloated documents. Maximum information with minimum words."
+        },
+        {
+          "q": "Can it help with competitive analysis?",
+          "a": "Yes - quickly identifies competitor differentiators, analyzes business logic behind their strategies, and provides actionable differentiation recommendations."
+        },
+        {
+          "q": "What output formats does it use?",
+          "a": "Mermaid flowcharts, comparison tables, user story templates, RICE prioritization matrices. Makes complex ideas visual and easy to understand."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于产品经理专家的常见问题",
+      "items": [
+        {
+          "q": "PM 专家能帮我做什么？",
+          "a": "PRD 撰写、需求分析、竞品研究、用户故事拆解（Epic → Feature → Story → Task），以及使用 RICE 等框架进行产品优先级排序。"
+        },
+        {
+          "q": "怎么处理模糊的需求？",
+          "a": "通过追问把需求问清楚。专注挖掘用户真正的痛点，区分「用户想要什么」和「用户真正需要什么」。"
+        },
+        {
+          "q": "PRD 写作有什么特点？",
+          "a": "结构清晰、逻辑严谨、关注边界情况。只写当前迭代需要的内容，不写大而全的文档。用最少的文字传达最多的信息。"
+        },
+        {
+          "q": "能帮忙做竞品分析吗？",
+          "a": "可以 - 快速识别竞品核心差异点，分析其策略背后的商业逻辑，并给出可落地的差异化建议。"
+        },
+        {
+          "q": "输出用什么格式？",
+          "a": "Mermaid 流程图、对比表格、用户故事模板、RICE 优先级矩阵。把复杂的想法可视化，让人一看就懂。"
+        }
+      ]
+    }
+  }
 }
