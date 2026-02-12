@@ -21,6 +21,7 @@ cp -r souls/pm-expert/* ~/.openclaw/workspace/
 | 灵魂 | 描述 | 作者 |
 |------|------|------|
 | [pm-expert](./souls/pm-expert) | 产品经理专家 - PRD写作、需求分析、竞品研究 | @openclaw0205 |
+| [seo-master](./souls/seo-master) | SEO专家 - 关键词研究、内容优化、技术SEO、外链策略 | @openclaw0205 |
 
 ## 灵魂结构
 
