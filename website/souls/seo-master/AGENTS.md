@@ -1,128 +1,128 @@
-# AGENTS.md - SEO 工作流程
+# AGENTS.md - SEO Workflows
 
-## 网站 SEO 审计流程
+## Website SEO Audit Flow
 
-当用户提供网站需要分析时：
+When user provides a website to analyze:
 
-### 1. 快速诊断
-- 检查首页 Title、Description
-- 查看 robots.txt 和 sitemap
-- 测试移动端适配
-- 检查页面加载速度
+### 1. Quick Diagnosis
+- Check homepage Title, Description
+- Review robots.txt and sitemap
+- Test mobile responsiveness
+- Check page load speed
 
-### 2. 内容分析
-- 核心页面的关键词覆盖
-- 内容质量和深度
-- 内链结构
+### 2. Content Analysis
+- Core page keyword coverage
+- Content quality and depth
+- Internal linking structure
 
-### 3. 技术检查
-- URL 结构是否友好
-- 是否有重复内容
-- 结构化数据实施情况
+### 3. Technical Check
+- URL structure friendliness
+- Duplicate content issues
+- Structured data implementation
 
-### 4. 输出报告
+### 4. Output Report
 ```markdown
-# [网站] SEO 审计报告
+# [Website] SEO Audit Report
 
-## 总体评分: X/100
+## Overall Score: X/100
 
-## 🔴 紧急问题（立即修复）
+## 🔴 Critical Issues (Fix Immediately)
 - 
 
-## 🟡 重要问题（本周修复）
+## 🟡 Important Issues (Fix This Week)
 - 
 
-## 🟢 优化建议（持续改进）
+## 🟢 Optimization Suggestions (Ongoing Improvement)
 - 
 
-## 行动计划
-| 优先级 | 任务 | 预期效果 | 工作量 |
-|--------|------|----------|--------|
+## Action Plan
+| Priority | Task | Expected Impact | Effort |
+|----------|------|-----------------|--------|
 ```
 
-## 关键词研究流程
+## Keyword Research Flow
 
-### 输入
-- 网站/产品类型
-- 目标市场
-- 当前排名情况（如有）
+### Input
+- Website/product type
+- Target market
+- Current ranking status (if available)
 
-### 输出
+### Output
 ```markdown
-# 关键词研究报告
+# Keyword Research Report
 
-## 种子关键词
-| 关键词 | 月搜索量 | KD | 搜索意图 |
-|--------|----------|----|---------| 
+## Seed Keywords
+| Keyword | Monthly Volume | KD | Search Intent |
+|---------|----------------|----|--------------| 
 
-## 长尾机会
-| 关键词 | 月搜索量 | KD | 推荐内容类型 |
-|--------|----------|----|--------------| 
+## Long-tail Opportunities
+| Keyword | Monthly Volume | KD | Recommended Content Type |
+|---------|----------------|----|-------------------------| 
 
-## 内容规划
-| 目标关键词 | 内容标题 | 优先级 |
-|------------|----------|--------|
+## Content Planning
+| Target Keyword | Content Title | Priority |
+|----------------|---------------|----------|
 ```
 
-## 内容优化检查清单
+## On-Page SEO Checklist
 
 ```markdown
-## On-Page SEO 检查
+## On-Page SEO Check
 
-### 标题优化
-- [ ] 包含目标关键词
-- [ ] 长度 50-60 字符
-- [ ] 有吸引力，提高点击率
+### Title Optimization
+- [ ] Contains target keyword
+- [ ] Length 50-60 characters
+- [ ] Compelling, improves CTR
 
 ### Meta Description
-- [ ] 包含关键词
-- [ ] 长度 150-160 字符
-- [ ] 有 CTA，吸引点击
+- [ ] Contains keyword
+- [ ] Length 150-160 characters
+- [ ] Has CTA, attracts clicks
 
-### 内容结构
-- [ ] H1 唯一且包含关键词
-- [ ] H2/H3 逻辑清晰
-- [ ] 段落短小，易于阅读
-- [ ] 包含图片/视频多媒体
+### Content Structure
+- [ ] H1 is unique and contains keyword
+- [ ] H2/H3 logical hierarchy
+- [ ] Short paragraphs, easy to read
+- [ ] Includes images/video multimedia
 
-### 内链
-- [ ] 链接到相关内容
-- [ ] 锚文本自然多样
+### Internal Links
+- [ ] Links to related content
+- [ ] Natural, diverse anchor text
 
-### 用户体验
-- [ ] 首屏有价值内容
-- [ ] 满足搜索意图
-- [ ] 有明确的下一步行动
+### User Experience
+- [ ] Valuable content above the fold
+- [ ] Satisfies search intent
+- [ ] Clear next action
 ```
 
-## 外链建设策略模板
+## Link Building Strategy Template
 
 ```markdown
-## 外链获取计划
+## Link Building Plan
 
-### 目标
-- 每月获取 X 条高质量外链
-- 目标 DR/DA: 30+
-- 相关行业优先
+### Goals
+- Acquire X quality backlinks per month
+- Target DR/DA: 30+
+- Related industry priority
 
-### 策略
+### Strategies
 1. **Guest Post**
-   - 目标站点列表
-   - 投稿主题
+   - Target site list
+   - Pitch topics
    
-2. **资源页外链**
-   - 搜索 "keyword + resources"
-   - 联系模板
+2. **Resource Page Links**
+   - Search "keyword + resources"
+   - Outreach templates
    
-3. **竞品外链复制**
-   - 分析竞品 top 外链
-   - 可复制的机会
+3. **Competitor Backlink Replication**
+   - Analyze competitor top backlinks
+   - Replicable opportunities
 
 4. **HARO/Qwoted**
-   - 每日查看记者请求
-   - 快速响应
+   - Check journalist requests daily
+   - Respond quickly
 ```
 
 ---
 
-根据具体情况灵活调整，SEO 是长期工程，不是一次性任务。
+Adapt flexibly based on context. SEO is a long-term game, not a one-time task.

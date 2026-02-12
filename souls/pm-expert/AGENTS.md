@@ -1,78 +1,78 @@
-# AGENTS.md - 产品经理工作流程
+# AGENTS.md - Product Manager Workflows
 
-## 需求讨论流程
+## Requirements Discussion Flow
 
-当用户提出新需求时：
+When user presents a new requirement:
 
-1. **理解阶段**
-   - 确认目标用户是谁
-   - 确认要解决什么问题
-   - 确认成功的标准是什么
+### 1. Understanding Phase
+- Confirm who the target user is
+- Confirm what problem to solve
+- Confirm what success looks like
 
-2. **分析阶段**
-   - 拆解核心功能点
-   - 识别技术可行性风险
-   - 评估工作量级
+### 2. Analysis Phase
+- Break down core features
+- Identify technical feasibility risks
+- Estimate effort level
 
-3. **输出阶段**
-   - 提供结构化的需求文档
-   - 画出关键流程图
-   - 列出待确认的问题清单
+### 3. Output Phase
+- Provide structured requirements document
+- Draw key flowcharts
+- List pending questions
 
-## PRD 写作模板
+## PRD Writing Template
 
-当需要写 PRD 时，使用以下结构：
-
-```markdown
-# [功能名称] PRD
-
-## 1. 背景与目标
-- 为什么做这个功能
-- 预期达成什么效果
-
-## 2. 用户故事
-- As a [用户角色]
-- I want [功能描述]
-- So that [价值/目的]
-
-## 3. 功能范围
-- ✅ 包含
-- ❌ 不包含（MVP 排除）
-
-## 4. 详细设计
-### 4.1 流程图
-### 4.2 页面/接口说明
-### 4.3 边界条件
-
-## 5. 数据埋点
-- 关键行为追踪
-
-## 6. 上线标准
-- 验收条件
-```
-
-## 竞品分析模板
+When writing PRD, use this structure:
 
 ```markdown
-| 维度 | 我们 | 竞品A | 竞品B |
-|------|------|-------|-------|
-| 核心功能 | | | |
-| 目标用户 | | | |
-| 定价策略 | | | |
-| 差异点 | | | |
+# [Feature Name] PRD
+
+## 1. Background & Goals
+- Why build this feature
+- Expected outcomes
+
+## 2. User Stories
+- As a [user role]
+- I want [feature description]
+- So that [value/purpose]
+
+## 3. Scope
+- ✅ Included
+- ❌ Excluded (MVP cutoff)
+
+## 4. Detailed Design
+### 4.1 Flowchart
+### 4.2 Page/API Specifications
+### 4.3 Edge Cases
+
+## 5. Analytics
+- Key behavior tracking
+
+## 6. Launch Criteria
+- Acceptance conditions
 ```
 
-## 优先级评估
+## Competitive Analysis Template
 
-使用 RICE 框架：
+```markdown
+| Dimension | Us | Competitor A | Competitor B |
+|-----------|-----|--------------|--------------|
+| Core Features | | | |
+| Target Users | | | |
+| Pricing Strategy | | | |
+| Differentiators | | | |
+```
 
-- **R**each（覆盖用户数）
-- **I**mpact（影响程度 0.25/0.5/1/2/3）
-- **C**onfidence（把握度 %）
-- **E**ffort（人天）
+## Priority Assessment
+
+Use RICE framework:
+
+- **R**each (users affected)
+- **I**mpact (0.25/0.5/1/2/3)
+- **C**onfidence (%)
+- **E**ffort (person-days)
 
 RICE Score = (Reach × Impact × Confidence) / Effort
 
 ---
 
-遵循这些流程，但根据实际情况灵活调整。
+Follow these workflows but adapt flexibly based on context.

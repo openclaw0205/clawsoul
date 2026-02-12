@@ -73,7 +73,7 @@ export default async function SoulPage({ params }: PageProps) {
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            返回列表
+            Back to list
           </Link>
         </div>
       </header>
@@ -103,17 +103,17 @@ export default async function SoulPage({ params }: PageProps) {
 
         {/* Install */}
         <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 mb-8">
-          <h2 className="text-xl font-semibold text-white mb-4">📦 安装</h2>
+          <h2 className="text-xl font-semibold text-white mb-4">📦 Installation</h2>
 
           <div className="mb-6">
-            <h3 className="text-sm text-gray-400 mb-2">一键安装（推荐）</h3>
+            <h3 className="text-sm text-gray-400 mb-2">One-line install (recommended)</h3>
             <div className="bg-gray-900 rounded-lg p-4 font-mono text-sm text-green-400 overflow-x-auto">
               {installCommand}
             </div>
           </div>
 
           <div>
-            <h3 className="text-sm text-gray-400 mb-2">手动安装</h3>
+            <h3 className="text-sm text-gray-400 mb-2">Manual install</h3>
             <div className="bg-gray-900 rounded-lg p-4 font-mono text-sm text-gray-300 overflow-x-auto">
               {manualCommand}
             </div>
@@ -121,7 +121,7 @@ export default async function SoulPage({ params }: PageProps) {
 
           {manifest.skills.length > 0 && (
             <div className="mt-6 pt-6 border-t border-gray-700">
-              <h3 className="text-sm text-gray-400 mb-2">依赖技能</h3>
+              <h3 className="text-sm text-gray-400 mb-2">Required skills</h3>
               <div className="flex flex-wrap gap-2">
                 {manifest.skills.map((skill) => (
                   <span
@@ -139,7 +139,7 @@ export default async function SoulPage({ params }: PageProps) {
         {/* Preview */}
         {soulMd && (
           <div className="bg-gray-800 rounded-xl p-6 border border-gray-700">
-            <h2 className="text-xl font-semibold text-white mb-4">👀 预览 SOUL.md</h2>
+            <h2 className="text-xl font-semibold text-white mb-4">👀 Preview SOUL.md</h2>
             <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
               <pre className="text-gray-300 text-sm whitespace-pre-wrap font-mono">
                 {soulMd}

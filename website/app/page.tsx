@@ -62,10 +62,10 @@ export default async function Home() {
       {/* Hero */}
       <section className="max-w-6xl mx-auto px-6 py-16 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          为你的 AI 助理注入灵魂
+          Give Your AI Assistant a Soul
         </h2>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          拒绝平庸的复读机，让 OpenClaw 瞬间变身各领域专家
+          Reject mediocre chatbots. Transform your OpenClaw into domain experts instantly.
         </p>
       </section>
 

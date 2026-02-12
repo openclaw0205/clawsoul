@@ -1,49 +1,50 @@
 # 🦞 ClawSoul
 
-> 为 OpenClaw 注入灵魂的模板商店
+> Soul templates for OpenClaw - Give your AI assistant expertise instantly
 
-大多数人并不缺 AI 模型，缺的是能够直接下场干活的"专家配置"。
+Most people don't lack AI models — they lack ready-to-go expert configurations.
 
-ClawSoul 提供精心调教的人格模板，让你的 OpenClaw 助理瞬间变身各领域专家。
+ClawSoul provides carefully crafted persona templates that transform your OpenClaw assistant into domain experts instantly.
 
-## 快速开始
+## Quick Start
 
 ```bash
-# 浏览可用灵魂
-ls souls/
+# One-line install
+curl -fsSL https://raw.githubusercontent.com/openclaw0205/clawsoul/main/scripts/install.sh | bash -s pm-expert
 
-# 手动安装（复制文件到你的 OpenClaw workspace）
-cp -r souls/pm-expert/* ~/.openclaw/workspace/
+# Manual install
+git clone https://github.com/openclaw0205/clawsoul.git
+cp -r clawsoul/souls/pm-expert/* ~/.openclaw/workspace/
 ```
 
-## 可用灵魂
+## Available Souls
 
-| 灵魂 | 描述 | 作者 |
-|------|------|------|
-| [pm-expert](./souls/pm-expert) | 产品经理专家 - PRD写作、需求分析、竞品研究 | @openclaw0205 |
-| [seo-master](./souls/seo-master) | SEO专家 - 关键词研究、内容优化、技术SEO、外链策略 | @openclaw0205 |
+| Soul | Description | Author |
+|------|-------------|--------|
+| [pm-expert](./souls/pm-expert) | Product Manager Expert - PRD writing, requirements analysis, competitive research | @openclaw0205 |
+| [seo-master](./souls/seo-master) | SEO Expert - Keyword research, content optimization, technical SEO, link building | @openclaw0205 |
 
-## 灵魂结构
+## Soul Structure
 
-每个灵魂包含：
+Each soul contains:
 
 ```
 souls/example/
-├── manifest.json    # 元数据
-├── SOUL.md          # 人格核心
-├── AGENTS.md        # 行为准则
-├── MEMORY.md        # 初始知识（可选）
-└── skills.txt       # 依赖技能列表
+├── manifest.json    # Metadata
+├── SOUL.md          # Core persona
+├── AGENTS.md        # Behavior guidelines
+├── MEMORY.md        # Pre-loaded knowledge (optional)
+└── skills.txt       # Required skills list
 ```
 
-## 贡献灵魂
+## Contributing
 
-我们欢迎社区贡献！请查看 [CONTRIBUTING.md](./CONTRIBUTING.md)
+We welcome community contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
-## 许可证
+## License
 
 MIT License
 
 ---
 
-*拒绝平庸的复读机，为你的 OpenClaw 寻找百里挑一的灵魂。*
+*Reject mediocre chatbots. Find a soul that truly excels.*
