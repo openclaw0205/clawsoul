@@ -43,5 +43,18 @@
   },
   "footer": {
     "license": "MIT License"
+  },
+  "submit": {
+    "title": "Share Your Soul Template",
+    "subtitle": "Let your OpenClaw assistant handle the submission",
+    "step1": "Copy the link below",
+    "step1Desc": "This is a submission guide that your OpenClaw will read to help you submit",
+    "step2": "Send to your OpenClaw",
+    "step2Desc": "Send the link to your OpenClaw assistant and tell it which persona you want to share",
+    "step3": "Follow OpenClaw's guidance",
+    "step3Desc": "Your OpenClaw will help organize files, translate to English, and submit to GitHub",
+    "copy": "Copy",
+    "tip": "Tip",
+    "tipDesc": "If your OpenClaw has GitHub access, it can create a Pull Request directly. Otherwise, it will generate the submission content for you to create an Issue manually."
   }
 }

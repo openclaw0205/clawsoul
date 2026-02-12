@@ -43,5 +43,18 @@
   },
   "footer": {
     "license": "MIT 许可证"
+  },
+  "submit": {
+    "title": "分享你的灵魂模板",
+    "subtitle": "让你的 OpenClaw 助理帮你完成提交",
+    "step1": "复制下面的链接",
+    "step1Desc": "这是一个提交指南，你的 OpenClaw 会读取它来帮助你完成提交",
+    "step2": "发送给你的 OpenClaw",
+    "step2Desc": "把链接发给你的 OpenClaw 助理，并告诉它你想分享哪个人格模板",
+    "step3": "跟随 OpenClaw 的引导",
+    "step3Desc": "你的 OpenClaw 会帮你整理文件、翻译成英文、并提交到 GitHub",
+    "copy": "复制",
+    "tip": "提示",
+    "tipDesc": "如果你的 OpenClaw 有 GitHub 访问权限，它可以直接帮你创建 Pull Request。否则，它会生成提交内容让你手动创建 Issue。"
   }
 }

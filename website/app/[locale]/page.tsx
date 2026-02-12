@@ -114,16 +114,15 @@ export default async function Home({ params }: PageProps) {
 
         {/* Submit CTA */}
         <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-800">
-          <a
-            href="https://github.com/openclaw0205/clawsoul/blob/main/CONTRIBUTING.md"
-            target="_blank"
+          <Link
+            href={`/${locale}/submit`}
             className="flex items-center justify-center gap-2 w-full px-4 py-2.5 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg transition"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
             </svg>
             {t.nav.submitSoul}
-          </a>
+          </Link>
         </div>
       </aside>
 
@@ -291,16 +290,15 @@ export default async function Home({ params }: PageProps) {
             <p className="text-gray-400 mb-8">
               {t.cta.description}
             </p>
-            <a
-              href="https://github.com/openclaw0205/clawsoul/blob/main/CONTRIBUTING.md"
-              target="_blank"
+            <Link
+              href={`/${locale}/submit`}
               className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg transition"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
               </svg>
               {t.cta.button}
-            </a>
+            </Link>
           </div>
         </section>
 
