@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Home",
+    "souls": "Souls",
+    "github": "GitHub",
+    "submitSoul": "Submit Soul"
+  },
+  "hero": {
+    "title": "Find Awesome",
+    "titleHighlight": "Soul Templates",
+    "description": "ClawSoul is a community-driven marketplace with",
+    "descriptionSuffix": "soul templates.",
+    "descriptionSub": "Give your OpenClaw AI assistant expertise instantly.",
+    "searchPlaceholder": "Search souls by name, tag, or description..."
+  },
+  "filters": {
+    "all": "All",
+    "featured": "Featured",
+    "latest": "Latest",
+    "business": "Business",
+    "development": "Development"
+  },
+  "souls": {
+    "title": "All Souls",
+    "available": "available",
+    "by": "by",
+    "viewDetails": "View details →"
+  },
+  "cta": {
+    "title": "Build Your Own Soul",
+    "description": "Have expertise to share? Create a soul template and help others transform their AI assistants.",
+    "button": "Submit Your Soul"
+  },
+  "detail": {
+    "backToList": "Back to list",
+    "viewOnGithub": "View on GitHub",
+    "installation": "Installation",
+    "oneLineInstall": "One-line install",
+    "recommended": "Recommended",
+    "manualInstall": "Manual install",
+    "requiredSkills": "Required skills:",
+    "exploreMore": "Explore More Souls"
+  },
+  "footer": {
+    "license": "MIT License"
+  }
+}

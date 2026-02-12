@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "首页",
+    "souls": "灵魂库",
+    "github": "GitHub",
+    "submitSoul": "提交灵魂"
+  },
+  "hero": {
+    "title": "发现优秀的",
+    "titleHighlight": "灵魂模板",
+    "description": "ClawSoul 是一个社区驱动的模板市场，已收录",
+    "descriptionSuffix": "个灵魂模板。",
+    "descriptionSub": "让你的 OpenClaw AI 助理瞬间变身领域专家。",
+    "searchPlaceholder": "搜索灵魂名称、标签或描述..."
+  },
+  "filters": {
+    "all": "全部",
+    "featured": "精选",
+    "latest": "最新",
+    "business": "商业",
+    "development": "开发"
+  },
+  "souls": {
+    "title": "全部灵魂",
+    "available": "个可用",
+    "by": "作者",
+    "viewDetails": "查看详情 →"
+  },
+  "cta": {
+    "title": "打造你的灵魂",
+    "description": "有专业知识想分享？创建灵魂模板，帮助更多人提升 AI 助理能力。",
+    "button": "提交你的灵魂"
+  },
+  "detail": {
+    "backToList": "返回列表",
+    "viewOnGithub": "在 GitHub 查看",
+    "installation": "安装",
+    "oneLineInstall": "一键安装",
+    "recommended": "推荐",
+    "manualInstall": "手动安装",
+    "requiredSkills": "依赖技能：",
+    "exploreMore": "探索更多灵魂"
+  },
+  "footer": {
+    "license": "MIT 许可证"
+  }
+}

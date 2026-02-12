@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { getDictionary, locales, getLocaleName, type Locale } from "@/lib/i18n";
 
 interface SoulManifest {
   name: string;
@@ -14,7 +15,7 @@ interface SoulManifest {
 }
 
 interface PageProps {
-  params: Promise<{ soul: string }>;
+  params: Promise<{ locale: Locale; soul: string }>;
 }
 
 // Soul emoji mapping
@@ -51,14 +52,25 @@ async function getSoul(soulName: string) {
   return { manifest, soulMd, agentsMd, memoryMd };
 }
 
-export async function generateStaticParams() {
+async function getSoulNames(): Promise<string[]> {
   const soulsDir = path.join(process.cwd(), "souls");
-  const dirs = fs.readdirSync(soulsDir);
-  return dirs.map((soul) => ({ soul }));
+  return fs.readdirSync(soulsDir);
+}
+
+export async function generateStaticParams() {
+  const soulNames = await getSoulNames();
+  const params = [];
+  for (const locale of locales) {
+    for (const soul of soulNames) {
+      params.push({ locale, soul });
+    }
+  }
+  return params;
 }
 
 export default async function SoulPage({ params }: PageProps) {
-  const { soul: soulName } = await params;
+  const { locale, soul: soulName } = await params;
+  const t = getDictionary(locale);
   const soul = await getSoul(soulName);
 
   if (!soul) {
@@ -76,27 +88,45 @@ cp -r clawsoul/souls/${manifest.name}/* ~/.openclaw/workspace/`;
       <header className="sticky top-0 z-50 bg-gray-900/95 backdrop-blur border-b border-gray-800">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-6">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href={`/${locale}`} className="flex items-center gap-2">
               <span className="text-2xl">🦞</span>
               <span className="text-lg font-bold text-white">ClawSoul</span>
             </Link>
             <Link
-              href="/"
+              href={`/${locale}`}
               className="hidden sm:flex items-center gap-2 text-gray-400 hover:text-white transition"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              Back to list
+              {t.detail.backToList}
             </Link>
           </div>
-          <a
-            href={`https://github.com/openclaw0205/clawsoul/tree/main/souls/${manifest.name}`}
-            target="_blank"
-            className="text-sm text-gray-400 hover:text-white transition"
-          >
-            View on GitHub
-          </a>
+          <div className="flex items-center gap-4">
+            {/* Language Switcher */}
+            <div className="flex gap-1">
+              {locales.map((loc) => (
+                <Link
+                  key={loc}
+                  href={`/${loc}/${soulName}`}
+                  className={`px-2 py-1 text-xs rounded transition ${
+                    loc === locale
+                      ? "bg-orange-500/20 text-orange-400"
+                      : "text-gray-400 hover:text-white"
+                  }`}
+                >
+                  {loc.toUpperCase()}
+                </Link>
+              ))}
+            </div>
+            <a
+              href={`https://github.com/openclaw0205/clawsoul/tree/main/souls/${manifest.name}`}
+              target="_blank"
+              className="text-sm text-gray-400 hover:text-white transition"
+            >
+              {t.detail.viewOnGithub}
+            </a>
+          </div>
         </div>
       </header>
 
@@ -113,7 +143,7 @@ cp -r clawsoul/souls/${manifest.name}/* ~/.openclaw/workspace/`;
               <div>
                 <h1 className="text-3xl font-bold text-white mb-2">{manifest.display_name}</h1>
                 <p className="text-gray-400">
-                  by{" "}
+                  {t.souls.by}{" "}
                   <a
                     href={`https://github.com/${manifest.author}`}
                     target="_blank"
@@ -144,7 +174,7 @@ cp -r clawsoul/souls/${manifest.name}/* ~/.openclaw/workspace/`;
             {/* Required Skills */}
             {manifest.skills.length > 0 && (
               <div className="flex items-center gap-3">
-                <span className="text-sm text-gray-500">Required skills:</span>
+                <span className="text-sm text-gray-500">{t.detail.requiredSkills}</span>
                 <div className="flex gap-2">
                   {manifest.skills.map((skill) => (
                     <span
@@ -163,14 +193,14 @@ cp -r clawsoul/souls/${manifest.name}/* ~/.openclaw/workspace/`;
           <div className="md:w-96">
             <div className="bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden">
               <div className="px-6 py-4 border-b border-gray-800">
-                <h2 className="text-lg font-semibold text-white">📦 Installation</h2>
+                <h2 className="text-lg font-semibold text-white">📦 {t.detail.installation}</h2>
               </div>
               <div className="p-6 space-y-6">
                 {/* One-line install */}
                 <div>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-gray-400">One-line install</span>
-                    <span className="text-xs text-green-400 bg-green-400/10 px-2 py-0.5 rounded">Recommended</span>
+                    <span className="text-sm text-gray-400">{t.detail.oneLineInstall}</span>
+                    <span className="text-xs text-green-400 bg-green-400/10 px-2 py-0.5 rounded">{t.detail.recommended}</span>
                   </div>
                   <div className="bg-gray-950 rounded-lg p-4 font-mono text-xs text-green-400 overflow-x-auto border border-gray-800">
                     {installCommand}
@@ -179,7 +209,7 @@ cp -r clawsoul/souls/${manifest.name}/* ~/.openclaw/workspace/`;
 
                 {/* Manual install */}
                 <div>
-                  <span className="text-sm text-gray-400 block mb-2">Manual install</span>
+                  <span className="text-sm text-gray-400 block mb-2">{t.detail.manualInstall}</span>
                   <div className="bg-gray-950 rounded-lg p-4 font-mono text-xs text-gray-400 overflow-x-auto border border-gray-800 whitespace-pre">
                     {manualCommand}
                   </div>
@@ -220,13 +250,13 @@ cp -r clawsoul/souls/${manifest.name}/* ~/.openclaw/workspace/`;
         {/* Back CTA */}
         <div className="mt-12 text-center">
           <Link
-            href="/"
+            href={`/${locale}`}
             className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-medium rounded-lg transition"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            Explore More Souls
+            {t.detail.exploreMore}
           </Link>
         </div>
       </main>
@@ -238,7 +268,7 @@ cp -r clawsoul/souls/${manifest.name}/* ~/.openclaw/workspace/`;
             <span>🦞</span>
             <span>ClawSoul</span>
             <span>·</span>
-            <span>MIT License</span>
+            <span>{t.footer.license}</span>
           </div>
           <div className="flex items-center gap-4">
             <a href="https://github.com/openclaw0205/clawsoul" target="_blank" className="hover:text-white transition">
