@@ -2,7 +2,8 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getDictionary, locales, getLocaleName, type Locale } from "@/lib/i18n";
+import { getDictionary, locales, type Locale } from "@/lib/i18n";
+import FileTabs from "@/components/FileTabs";
 
 interface SoulManifest {
   name: string;
@@ -24,6 +25,78 @@ const soulEmojis: Record<string, string> = {
   "seo-master": "🔍",
   "code-mentor": "💻",
   "life-coach": "🌟",
+};
+
+// Soul key features (localized)
+const soulFeatures: Record<string, Record<Locale, string[]>> = {
+  "seo-master": {
+    en: [
+      "Keyword research and competition analysis",
+      "Content optimization for search intent",
+      "Technical SEO audits and fixes",
+      "Link building strategy planning",
+      "GEO (Generative Engine Optimization)",
+    ],
+    zh: [
+      "关键词研究与竞争分析",
+      "内容优化以匹配搜索意图",
+      "技术 SEO 审核与修复",
+      "外链建设策略规划",
+      "GEO（生成式引擎优化）",
+    ],
+  },
+  "pm-expert": {
+    en: [
+      "PRD writing and requirements analysis",
+      "User story breakdown",
+      "Competitive analysis",
+      "Feature prioritization",
+      "Roadmap planning",
+    ],
+    zh: [
+      "PRD 撰写与需求分析",
+      "用户故事拆解",
+      "竞品分析",
+      "功能优先级排序",
+      "路线图规划",
+    ],
+  },
+};
+
+// Soul use cases (localized)
+const soulUseCases: Record<string, Record<Locale, string[]>> = {
+  "seo-master": {
+    en: [
+      "Audit your website's SEO health",
+      "Research keywords for new content",
+      "Optimize existing pages for better rankings",
+      "Analyze competitor backlink profiles",
+      "Plan content calendar based on search demand",
+    ],
+    zh: [
+      "审核网站 SEO 健康状况",
+      "为新内容研究关键词",
+      "优化现有页面提升排名",
+      "分析竞争对手外链策略",
+      "基于搜索需求规划内容日历",
+    ],
+  },
+  "pm-expert": {
+    en: [
+      "Write detailed PRDs for new features",
+      "Break down epics into user stories",
+      "Conduct competitive analysis",
+      "Define MVP scope and roadmap",
+      "Create feature specifications",
+    ],
+    zh: [
+      "为新功能撰写详细 PRD",
+      "将大型需求拆解为用户故事",
+      "进行竞品分析",
+      "定义 MVP 范围和路线图",
+      "创建功能规格说明",
+    ],
+  },
 };
 
 async function getSoul(soulName: string) {
@@ -81,6 +154,9 @@ export default async function SoulPage({ params }: PageProps) {
   const installCommand = `curl -fsSL https://raw.githubusercontent.com/openclaw0205/clawsoul/main/scripts/install.sh | bash -s ${manifest.name}`;
   const manualCommand = `git clone https://github.com/openclaw0205/clawsoul.git
 cp -r clawsoul/souls/${manifest.name}/* ~/.openclaw/workspace/`;
+
+  const features = soulFeatures[manifest.name]?.[locale] || [];
+  const useCases = soulUseCases[manifest.name]?.[locale] || [];
 
   return (
     <div className="min-h-screen bg-gray-950">
@@ -219,33 +295,76 @@ cp -r clawsoul/souls/${manifest.name}/* ~/.openclaw/workspace/`;
           </div>
         </div>
 
-        {/* File Tabs */}
-        <div className="bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden">
-          <div className="flex border-b border-gray-800 overflow-x-auto">
-            {soulMd && (
-              <button className="px-6 py-3 text-sm font-medium text-orange-400 border-b-2 border-orange-400 bg-orange-400/5">
-                SOUL.md
-              </button>
-            )}
-            {agentsMd && (
-              <button className="px-6 py-3 text-sm font-medium text-gray-400 hover:text-white transition">
-                AGENTS.md
-              </button>
-            )}
-            {memoryMd && (
-              <button className="px-6 py-3 text-sm font-medium text-gray-400 hover:text-white transition">
-                MEMORY.md
-              </button>
-            )}
+        {/* Info Cards - MiniMax Style */}
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {/* What is this Soul */}
+          <div className="bg-gray-900 rounded-2xl border border-gray-800 p-6">
+            <h2 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+              <span>❓</span>
+              {locale === "zh" ? `什么是 ${manifest.display_name}？` : `What is ${manifest.display_name}?`}
+            </h2>
+            <p className="text-gray-400 leading-relaxed">
+              {manifest.description}
+              {locale === "zh" 
+                ? " 这是一个 OpenClaw 人格模板，可以让你的 AI 助理瞬间具备专业能力。"
+                : " This is an OpenClaw Soul template that instantly gives your AI assistant professional capabilities."
+              }
+            </p>
           </div>
 
-          {/* File Content */}
-          <div className="p-6 max-h-[600px] overflow-y-auto">
-            <pre className="text-gray-300 text-sm whitespace-pre-wrap font-mono leading-relaxed">
-              {soulMd}
-            </pre>
+          {/* How to use */}
+          <div className="bg-gray-900 rounded-2xl border border-gray-800 p-6">
+            <h2 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+              <span>🚀</span>
+              {locale === "zh" ? "如何使用？" : "How to use?"}
+            </h2>
+            <p className="text-gray-400 leading-relaxed">
+              {locale === "zh"
+                ? "1. 使用上方安装命令下载模板\n2. 重启 OpenClaw 或新建会话\n3. 开始与你的专业 AI 助理对话"
+                : "1. Use the install command above\n2. Restart OpenClaw or start a new session\n3. Start chatting with your expert AI assistant"
+              }
+            </p>
           </div>
         </div>
+
+        {/* Key Features */}
+        {features.length > 0 && (
+          <div className="bg-gray-900 rounded-2xl border border-gray-800 p-6 mb-6">
+            <h2 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+              <span>✨</span>
+              {locale === "zh" ? "核心能力" : "Key Features"}
+            </h2>
+            <ul className="space-y-3">
+              {features.map((feature, index) => (
+                <li key={index} className="flex items-start gap-3 text-gray-400">
+                  <span className="text-orange-400 mt-0.5">•</span>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Use Cases */}
+        {useCases.length > 0 && (
+          <div className="bg-gray-900 rounded-2xl border border-gray-800 p-6 mb-12">
+            <h2 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+              <span>💡</span>
+              {locale === "zh" ? "使用场景" : "Use Cases"}
+            </h2>
+            <ul className="space-y-3">
+              {useCases.map((useCase, index) => (
+                <li key={index} className="flex items-start gap-3 text-gray-400">
+                  <span className="text-blue-400 mt-0.5">•</span>
+                  <span>{useCase}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* File Tabs - Client Component */}
+        <FileTabs soulMd={soulMd} agentsMd={agentsMd} memoryMd={memoryMd} />
 
         {/* Back CTA */}
         <div className="mt-12 text-center">
