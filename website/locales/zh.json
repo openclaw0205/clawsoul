@@ -1,28 +1,28 @@
 {
   "nav": {
     "home": "首页",
-    "souls": "灵魂库",
+    "souls": "专家库",
     "github": "GitHub",
-    "submitSoul": "提交灵魂",
+    "submitSoul": "贡献专家",
     "backHome": "← 返回首页",
     "language": "语言"
   },
   "landing": {
     "meta": {
-      "title": "OpenClaw 灵魂模板库",
-      "description": "为你的 OpenClaw AI 助理注入领域专业知识，社区精选的人格模板库。"
+      "title": "AI 专家模板库",
+      "description": "让你的 AI 助理瞬间变身领域专家，社区精选的专家配置模板。"
     },
     "hero": {
-      "badge": "已收录 30+ 专家灵魂",
-      "title": "让 AI 助理成为",
+      "badge": "已收录 30+ 专家模板",
+      "title": "让 AI 助理秒变",
       "titleHighlight": "领域专家",
-      "description": "ClawSoul 是社区驱动的灵魂模板库，让你的 OpenClaw AI 助理瞬间具备产品管理、SEO、开发、设计等领域的专业能力。",
-      "cta": "浏览灵魂库",
+      "description": "ClawSoul 是社区驱动的 AI 专家模板库。一键安装，你的 OpenClaw 助理瞬间具备产品、SEO、开发、设计等领域的专业能力。",
+      "cta": "浏览专家库",
       "github": "查看源码"
     },
     "showcase": {
-      "title": "精选灵魂模板",
-      "description": "{count} 个专家人格，即装即用"
+      "title": "精选专家模板",
+      "description": "{count} 位 AI 专家，即装即用"
     },
     "features": {
       "title": "为什么选择 ClawSoul？",
@@ -30,53 +30,53 @@
         {
           "icon": "⚡",
           "title": "即刻专业",
-          "description": "省去数周的提示词调试。每个灵魂都经过精心设计，包含领域知识、最佳实践和优化行为。"
+          "description": "省去数周的提示词调试。每个模板都经过精心设计，包含领域知识、最佳实践和专家思维。"
         },
         {
           "icon": "🎯",
-          "title": "领域专精",
-          "description": "从产品经理到 SEO 专家，从开发工程师到设计师。找到你需要的精准专业能力。"
+          "title": "精准匹配",
+          "description": "从产品经理到 SEO 专家，从资深开发到 UI 设计师。找到你需要的精准专业能力。"
         },
         {
           "icon": "🔧",
           "title": "完全可定制",
-          "description": "所有灵魂完全开源。随意修改、扩展或组合，打造你的专属 AI 助理。"
+          "description": "所有模板完全开源。随意修改、扩展或组合，打造你的专属 AI 专家团队。"
         }
       ]
     },
     "howItWorks": {
-      "title": "三步上手",
+      "title": "三步获得专家",
       "steps": [
         {
           "number": "1",
-          "title": "浏览灵魂",
-          "description": "探索精选集合，找到你需要的专业能力"
+          "title": "找专家",
+          "description": "浏览专家库，找到你需要的专业能力"
         },
         {
           "number": "2",
           "title": "一键安装",
-          "description": "复制安装命令或直接下载灵魂文件"
+          "description": "复制安装命令，专家配置自动生效"
         },
         {
           "number": "3",
-          "title": "开始使用",
-          "description": "你的 OpenClaw 助理现在是领域专家了！"
+          "title": "开始提问",
+          "description": "你的 AI 现在是领域专家了！"
         }
       ]
     },
     "cta": {
       "title": "分享你的专业知识",
-      "description": "有领域知识想分享？创建灵魂模板，帮助数千个 AI 助理成为像你一样的专家。",
-      "button": "提交你的灵魂"
+      "description": "你是某领域专家？把你的经验做成模板，帮助更多人的 AI 助理变得专业。",
+      "button": "贡献专家模板"
     }
   },
   "hero": {
-    "title": "发现优秀的",
-    "titleHighlight": "灵魂模板",
-    "description": "ClawSoul 是一个社区驱动的模板市场，已收录",
-    "descriptionSuffix": "个灵魂模板。",
+    "title": "发现",
+    "titleHighlight": "AI 专家",
+    "description": "ClawSoul 是社区驱动的专家模板库，已收录",
+    "descriptionSuffix": "位专家。",
     "descriptionSub": "让你的 OpenClaw AI 助理瞬间变身领域专家。",
-    "searchPlaceholder": "搜索灵魂名称、标签或描述..."
+    "searchPlaceholder": "搜索专家名称、标签或描述..."
   },
   "filters": {
     "all": "全部",
@@ -86,19 +86,19 @@
     "development": "开发",
     "activeTag": "筛选标签:",
     "allTags": "所有标签",
-    "noResults": "没有找到匹配的灵魂",
-    "clearFilters": "清除筛选条件"
+    "noResults": "没有找到匹配的专家",
+    "clearFilters": "清除筛选"
   },
   "souls": {
-    "title": "全部灵魂",
-    "available": "个可用",
+    "title": "全部专家",
+    "available": "位可用",
     "by": "作者",
     "viewDetails": "查看详情 →"
   },
   "cta": {
-    "title": "打造你的灵魂",
-    "description": "有专业知识想分享？创建灵魂模板，帮助更多人提升 AI 助理能力。",
-    "button": "提交你的灵魂"
+    "title": "分享你的专业",
+    "description": "你是某领域专家？把经验做成模板，帮助更多 AI 助理变专业。",
+    "button": "贡献专家模板"
   },
   "detail": {
     "backToList": "返回列表",
@@ -108,53 +108,53 @@
     "recommended": "推荐",
     "manualInstall": "手动安装",
     "requiredSkills": "依赖技能：",
-    "exploreMore": "探索更多灵魂"
+    "exploreMore": "探索更多专家"
   },
   "footer": {
     "license": "MIT 许可证"
   },
   "faq": {
     "title": "常见问题",
-    "subtitle": "关于 ClawSoul 的常见问题解答",
+    "subtitle": "关于 ClawSoul 的常见问题",
     "items": [
       {
-        "q": "什么是 Soul（灵魂）？",
-        "a": "Soul 是 OpenClaw AI 助理的预配置人格模板。它包含人格定义、行为准则、预置知识和依赖技能——让你的 AI 瞬间成为特定领域的专家。"
+        "q": "什么是专家模板？",
+        "a": "专家模板是一套 AI 配置，包含领域知识、专家思维和行为准则。安装后，你的 AI 助理瞬间具备该领域的专业能力。"
       },
       {
         "q": "什么是 OpenClaw？",
-        "a": "OpenClaw 是一个开源 AI Agent 框架，支持本地或云端运行 AI 助理。它兼容多种大模型提供商，可通过技能和工具扩展功能。ClawSoul 为 OpenClaw 提供开箱即用的人格模板。"
+        "a": "OpenClaw 是开源 AI Agent 框架，支持本地或云端运行。ClawSoul 的专家模板就是为 OpenClaw 设计的。"
       },
       {
-        "q": "如何安装 Soul？",
-        "a": "目前可以手动将 soul 文件复制到 OpenClaw 工作目录（~/.openclaw/workspace/）。我们正在开发一键安装命令（openclaw soul add <name>），敬请期待！"
+        "q": "如何安装专家模板？",
+        "a": "复制一键安装命令即可。也可以手动下载文件到 ~/.openclaw/workspace/ 目录。"
       },
       {
-        "q": "Soul 包含哪些文件？",
-        "a": "一个 Soul 包包含：manifest.json（元数据）、SOUL.md（人格核心），以及可选的 AGENTS.md（行为准则）、MEMORY.md（预置知识）、skills.txt（依赖技能列表）。"
+        "q": "模板包含哪些内容？",
+        "a": "manifest.json（基本信息）、SOUL.md（专家核心配置），以及可选的 AGENTS.md（行为准则）、MEMORY.md（预置知识）、skills.txt（依赖技能）。"
       },
       {
-        "q": "如何提交自己的 Soul？",
-        "a": "点击「提交灵魂」按钮并按引导操作。你的 OpenClaw 助理可以帮你整理文件、翻译内容并创建 GitHub Pull Request。也可以直接在我们的 GitHub 仓库手动创建 Issue。"
+        "q": "如何贡献自己的专家模板？",
+        "a": "点击「贡献专家模板」，让你的 OpenClaw 助理帮你整理文件并提交到 GitHub。也可以直接在 GitHub 创建 PR。"
       },
       {
         "q": "ClawSoul 免费吗？",
-        "a": "完全免费！ClawSoul 是 100% 免费开源项目，采用 MIT 许可证。所有灵魂模板均由社区贡献，可自由使用、修改和再分发。"
+        "a": "完全免费开源，MIT 许可证。所有模板由社区贡献，可自由使用和修改。"
       }
     ]
   },
   "submit": {
-    "title": "分享你的灵魂模板",
-    "subtitle": "让你的 OpenClaw 助理帮你完成提交",
+    "title": "贡献你的专家模板",
+    "subtitle": "让 OpenClaw 助理帮你完成提交",
     "step1": "复制下面的链接",
-    "step1Desc": "这是一个提交指南，你的 OpenClaw 会读取它来帮助你完成提交",
+    "step1Desc": "这是提交指南，你的 OpenClaw 会读取它来帮你完成提交",
     "step2": "发送给你的 OpenClaw",
-    "step2Desc": "把链接发给你的 OpenClaw 助理，并告诉它你想分享哪个人格模板",
-    "step2Example": "💬 示例消息：\n\n\"读一下这个链接，帮我把『编程大师』人格提交到 ClawSoul\"",
-    "step3": "跟随 OpenClaw 的引导",
-    "step3Desc": "你的 OpenClaw 会帮你整理文件、翻译成英文、并提交到 GitHub",
+    "step2Desc": "把链接发给 OpenClaw 助理，告诉它你想分享哪个专家配置",
+    "step2Example": "💬 示例：\n\n\"读一下这个链接，帮我把『资深产品经理』模板提交到 ClawSoul\"",
+    "step3": "跟随引导完成",
+    "step3Desc": "OpenClaw 会帮你整理文件、翻译成英文、提交到 GitHub",
     "copy": "复制",
     "tip": "提示",
-    "tipDesc": "如果你的 OpenClaw 有 GitHub 访问权限，它可以直接帮你创建 Pull Request。否则，它会生成提交内容让你手动创建 Issue。"
+    "tipDesc": "如果 OpenClaw 有 GitHub 权限，可以直接创建 PR。否则会生成内容让你手动提交 Issue。"
   }
 }
