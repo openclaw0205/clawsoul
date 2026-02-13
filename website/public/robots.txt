@@ -1,0 +1,9 @@
+# ClawSoul - Soul Templates for OpenClaw
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://clawsoul.vercel.app/sitemap.xml
+
+# Disallow admin/api paths
+Disallow: /api/

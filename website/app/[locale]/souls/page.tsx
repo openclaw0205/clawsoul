@@ -39,9 +39,39 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps) {
   const { locale } = await params;
   const t = getDictionary(locale);
+  const souls = await getSouls();
+  
+  const title = locale === "zh" 
+    ? `全部 ${souls.length} 个 AI 专家模板 - ClawSoul`
+    : `All ${souls.length} AI Expert Templates - ClawSoul`;
+  
+  const description = locale === "zh"
+    ? `浏览 ${souls.length} 个精选 AI 专家模板。包含产品经理、SEO专家、开发者、设计师等多种专业人格，让你的 OpenClaw AI 助手瞬间获得领域专业知识。`
+    : `Browse ${souls.length} curated AI expert templates. Including Product Manager, SEO Expert, Developer, Designer and more. Give your OpenClaw AI assistant instant domain expertise.`;
+
   return {
-    title: `${t.nav.souls} - ClawSoul`,
-    description: t.hero.description,
+    title,
+    description,
+    keywords: [
+      "AI templates",
+      "OpenClaw",
+      "AI agent",
+      "expert templates",
+      "AI personality",
+      locale === "zh" ? "AI专家模板" : "AI expert",
+    ],
+    openGraph: {
+      title,
+      description,
+      type: "website",
+    },
+    alternates: {
+      canonical: `https://clawsoul.vercel.app/${locale}/souls`,
+      languages: {
+        en: "/en/souls",
+        zh: "/zh/souls",
+      },
+    },
   };
 }
 

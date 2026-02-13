@@ -91,23 +91,39 @@ export async function generateMetadata({ params }: PageProps) {
 
   const { manifest } = soul;
   const t = getDictionary(locale);
+  
+  // Generate SEO-friendly description
+  const seoDescription = locale === "zh" 
+    ? `${manifest.display_name} - OpenClaw AI 专家模板。${manifest.description} 包含 ${manifest.tags.slice(0, 3).join("、")} 等专业技能。`
+    : `${manifest.display_name} - OpenClaw AI expert template. ${manifest.description} Includes ${manifest.tags.slice(0, 3).join(", ")} expertise.`;
 
   return {
-    title: `${manifest.display_name} - ClawSoul`,
-    description: manifest.description,
+    title: `${manifest.display_name} | AI Expert Template - ClawSoul`,
+    description: seoDescription,
     keywords: [
       ...manifest.tags,
       "OpenClaw",
-      "AI",
+      "AI agent",
       "soul template",
+      "AI assistant",
+      "expert template",
       manifest.display_name,
+      locale === "zh" ? "AI专家模板" : "AI expert",
     ],
     openGraph: {
+      title: `${manifest.display_name} - AI Expert Template`,
+      description: seoDescription,
+      type: "article",
+      siteName: "ClawSoul",
+      url: `https://clawsoul.vercel.app/${locale}/${soulName}`,
+    },
+    twitter: {
+      card: "summary",
       title: `${manifest.display_name} - ClawSoul`,
       description: manifest.description,
-      type: "article",
     },
     alternates: {
+      canonical: `https://clawsoul.vercel.app/${locale}/${soulName}`,
       languages: {
         en: `/en/${soulName}`,
         zh: `/zh/${soulName}`,
