@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# synced souls data (auto-generated from root /souls/ at build time)
+/souls/

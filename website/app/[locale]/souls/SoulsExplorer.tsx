@@ -25,6 +25,10 @@ interface SoulsExplorerProps {
       latest: string;
       business: string;
       development: string;
+      activeTag: string;
+      allTags: string;
+      noResults: string;
+      clearFilters: string;
     };
     souls: {
       title: string;
@@ -54,7 +58,11 @@ const tagCategories: Record<string, string[]> = {
   development: ["code", "programming", "developer", "tech", "engineering"],
 };
 
-export default function SoulsExplorer({ souls, locale, t }: SoulsExplorerProps) {
+export default function SoulsExplorer({
+  souls,
+  locale,
+  t,
+}: SoulsExplorerProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeFilter, setActiveFilter] = useState("all");
   const [activeTag, setActiveTag] = useState<string | null>(null);
@@ -68,7 +76,7 @@ export default function SoulsExplorer({ souls, locale, t }: SoulsExplorerProps) 
 
   // Filter souls based on search, filter, and tag
   const filteredSouls = useMemo(() => {
-    return souls.filter((soul) => {
+    let result = souls.filter((soul) => {
       // Search filter
       if (searchQuery) {
         const query = searchQuery.toLowerCase();
@@ -81,13 +89,17 @@ export default function SoulsExplorer({ souls, locale, t }: SoulsExplorerProps) 
       }
 
       // Category filter
-      if (activeFilter !== "all") {
+      if (
+        activeFilter !== "all" &&
+        activeFilter !== "featured" &&
+        activeFilter !== "latest"
+      ) {
         const categoryTags = tagCategories[activeFilter];
         if (categoryTags) {
           const hasCategory = soul.tags.some((tag) =>
             categoryTags.some((catTag) =>
-              tag.toLowerCase().includes(catTag.toLowerCase())
-            )
+              tag.toLowerCase().includes(catTag.toLowerCase()),
+            ),
           );
           if (!hasCategory) return false;
         }
@@ -100,6 +112,13 @@ export default function SoulsExplorer({ souls, locale, t }: SoulsExplorerProps) 
 
       return true;
     });
+
+    // Latest: reverse order (newest added last in the array)
+    if (activeFilter === "latest") {
+      result = [...result].reverse();
+    }
+
+    return result;
   }, [souls, searchQuery, activeFilter, activeTag]);
 
   const handleTagClick = (tag: string, e: React.MouseEvent) => {
@@ -156,8 +175,18 @@ export default function SoulsExplorer({ souls, locale, t }: SoulsExplorerProps) 
                   onClick={() => setSearchQuery("")}
                   className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-white transition"
                 >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
                   </svg>
                 </button>
               )}
@@ -221,14 +250,26 @@ export default function SoulsExplorer({ souls, locale, t }: SoulsExplorerProps) 
           {/* Active Tag Indicator */}
           {activeTag && (
             <div className="mt-4 flex items-center gap-2">
-              <span className="text-sm text-gray-500">筛选标签:</span>
+              <span className="text-sm text-gray-500">
+                {t.filters.activeTag}
+              </span>
               <button
                 onClick={() => setActiveTag(null)}
                 className="inline-flex items-center gap-1 px-3 py-1 bg-orange-500/20 text-orange-400 text-sm rounded-full hover:bg-orange-500/30 transition"
               >
                 {activeTag}
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
             </div>
@@ -236,7 +277,9 @@ export default function SoulsExplorer({ souls, locale, t }: SoulsExplorerProps) 
 
           {/* All Tags */}
           <div className="mt-6 pt-6 border-t border-gray-800">
-            <span className="text-sm text-gray-500 block mb-3">所有标签</span>
+            <span className="text-sm text-gray-500 block mb-3">
+              {t.filters.allTags}
+            </span>
             <div className="flex flex-wrap gap-2">
               {allTags.map((tag) => (
                 <button
@@ -267,7 +310,7 @@ export default function SoulsExplorer({ souls, locale, t }: SoulsExplorerProps) 
         {filteredSouls.length === 0 ? (
           <div className="text-center py-16">
             <div className="text-6xl mb-4">🔍</div>
-            <p className="text-gray-400 text-lg">没有找到匹配的灵魂</p>
+            <p className="text-gray-400 text-lg">{t.filters.noResults}</p>
             <button
               onClick={() => {
                 setSearchQuery("");
@@ -276,7 +319,7 @@ export default function SoulsExplorer({ souls, locale, t }: SoulsExplorerProps) 
               }}
               className="mt-4 px-4 py-2 text-orange-400 hover:text-orange-300 transition"
             >
-              清除筛选条件
+              {t.filters.clearFilters}
             </button>
           </div>
         ) : (

@@ -30,6 +30,10 @@ interface SoulExplorerProps {
       latest: string;
       business: string;
       development: string;
+      activeTag: string;
+      allTags: string;
+      noResults: string;
+      clearFilters: string;
     };
     souls: {
       title: string;
@@ -78,7 +82,7 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
 
   // Filter souls based on search, filter, and tag
   const filteredSouls = useMemo(() => {
-    return souls.filter((soul) => {
+    let result = souls.filter((soul) => {
       // Search filter
       if (searchQuery) {
         const query = searchQuery.toLowerCase();
@@ -91,7 +95,11 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
       }
 
       // Category filter
-      if (activeFilter !== "all") {
+      if (
+        activeFilter !== "all" &&
+        activeFilter !== "featured" &&
+        activeFilter !== "latest"
+      ) {
         const categoryTags = tagCategories[activeFilter];
         if (categoryTags) {
           const hasCategory = soul.tags.some((tag) =>
@@ -110,6 +118,13 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
 
       return true;
     });
+
+    // Latest: reverse order (newest added last in the array)
+    if (activeFilter === "latest") {
+      result = [...result].reverse();
+    }
+
+    return result;
   }, [souls, searchQuery, activeFilter, activeTag]);
 
   const handleTagClick = (tag: string, e: React.MouseEvent) => {
@@ -246,7 +261,9 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
           {/* Active Tag Indicator */}
           {activeTag && (
             <div className="mt-4 flex items-center gap-2">
-              <span className="text-sm text-gray-500">筛选标签:</span>
+              <span className="text-sm text-gray-500">
+                {t.filters.activeTag}
+              </span>
               <button
                 onClick={() => setActiveTag(null)}
                 className="inline-flex items-center gap-1 px-3 py-1 bg-orange-500/20 text-orange-400 text-sm rounded-full hover:bg-orange-500/30 transition"
@@ -271,7 +288,9 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
 
           {/* All Tags */}
           <div className="mt-6 pt-6 border-t border-gray-800">
-            <span className="text-sm text-gray-500 block mb-3">所有标签</span>
+            <span className="text-sm text-gray-500 block mb-3">
+              {t.filters.allTags}
+            </span>
             <div className="flex flex-wrap gap-2">
               {allTags.map((tag) => (
                 <button
@@ -303,7 +322,7 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
         {filteredSouls.length === 0 ? (
           <div className="text-center py-16">
             <div className="text-6xl mb-4">🔍</div>
-            <p className="text-gray-400 text-lg">没有找到匹配的灵魂</p>
+            <p className="text-gray-400 text-lg">{t.filters.noResults}</p>
             <button
               onClick={() => {
                 setSearchQuery("");
@@ -312,7 +331,7 @@ export default function SoulExplorer({ souls, locale, t }: SoulExplorerProps) {
               }}
               className="mt-4 px-4 py-2 text-orange-400 hover:text-orange-300 transition"
             >
-              清除筛选条件
+              {t.filters.clearFilters}
             </button>
           </div>
         ) : (

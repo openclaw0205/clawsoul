@@ -84,6 +84,38 @@ export async function generateStaticParams() {
   return params;
 }
 
+export async function generateMetadata({ params }: PageProps) {
+  const { locale, soul: soulName } = await params;
+  const soul = await getSoul(soulName);
+  if (!soul) return {};
+
+  const { manifest } = soul;
+  const t = getDictionary(locale);
+
+  return {
+    title: `${manifest.display_name} - ClawSoul`,
+    description: manifest.description,
+    keywords: [
+      ...manifest.tags,
+      "OpenClaw",
+      "AI",
+      "soul template",
+      manifest.display_name,
+    ],
+    openGraph: {
+      title: `${manifest.display_name} - ClawSoul`,
+      description: manifest.description,
+      type: "article",
+    },
+    alternates: {
+      languages: {
+        en: `/en/${soulName}`,
+        zh: `/zh/${soulName}`,
+      },
+    },
+  };
+}
+
 export default async function SoulPage({ params }: PageProps) {
   const { locale, soul: soulName } = await params;
   const t = getDictionary(locale);

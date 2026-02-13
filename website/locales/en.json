@@ -3,7 +3,9 @@
     "home": "Home",
     "souls": "Souls",
     "github": "GitHub",
-    "submitSoul": "Submit Soul"
+    "submitSoul": "Submit Soul",
+    "backHome": "← Back to home",
+    "language": "Language"
   },
   "hero": {
     "title": "Find Awesome",
@@ -18,7 +20,11 @@
     "featured": "Featured",
     "latest": "Latest",
     "business": "Business",
-    "development": "Development"
+    "development": "Development",
+    "activeTag": "Filter tag:",
+    "allTags": "All tags",
+    "noResults": "No matching souls found",
+    "clearFilters": "Clear filters"
   },
   "souls": {
     "title": "All Souls",
@@ -81,6 +87,7 @@
     "step1Desc": "This is a submission guide that your OpenClaw will read to help you submit",
     "step2": "Send to your OpenClaw",
     "step2Desc": "Send the link to your OpenClaw assistant and tell it which persona you want to share",
+    "step2Example": "💬 Example message:\n\n\"Read this link and help me submit my 'Code Master' persona to ClawSoul\"",
     "step3": "Follow OpenClaw's guidance",
     "step3Desc": "Your OpenClaw will help organize files, translate to English, and submit to GitHub",
     "copy": "Copy",

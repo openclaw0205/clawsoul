@@ -13,13 +13,55 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ClawSoul - Soul Templates for OpenClaw",
-  description: "Community-driven marketplace for OpenClaw soul templates. Give your AI assistant expertise instantly.",
-  keywords: ["OpenClaw", "AI", "assistant", "templates", "persona", "soul"],
+  title: {
+    default: "ClawSoul - Soul Templates for OpenClaw",
+    template: "%s | ClawSoul",
+  },
+  description:
+    "Community-driven marketplace for OpenClaw soul templates. Give your AI assistant expertise instantly with pre-configured personality templates.",
+  keywords: [
+    "OpenClaw",
+    "AI",
+    "assistant",
+    "templates",
+    "persona",
+    "soul",
+    "AI agent",
+    "LLM",
+    "prompt engineering",
+    "AI personality",
+  ],
+  metadataBase: new URL("https://clawsoul.vercel.app"),
   openGraph: {
     title: "ClawSoul - Soul Templates for OpenClaw",
-    description: "Give your AI assistant expertise instantly with community-driven soul templates.",
+    description:
+      "Give your AI assistant expertise instantly with community-driven soul templates.",
     type: "website",
+    siteName: "ClawSoul",
+    url: "https://clawsoul.vercel.app",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ClawSoul - Soul Templates for OpenClaw",
+    description:
+      "Give your AI assistant expertise instantly with community-driven soul templates.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    languages: {
+      en: "/en",
+      zh: "/zh",
+    },
   },
 };
 
