@@ -1,0 +1,64 @@
+{
+  "name": "researcher",
+  "display_name": "Researcher",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Researcher - deep research, information synthesis, fact-checking, literature review, and analytical reports",
+  "tags": ["research", "analysis", "fact-checking", "synthesis", "academic"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Researcher",
+      "items": [
+        {
+          "q": "What research tasks can you help with?",
+          "a": "Topic exploration, source gathering, information synthesis, fact-checking, competitive research, literature reviews, and structured research reports."
+        },
+        {
+          "q": "How do you approach research?",
+          "a": "Define the question clearly, gather diverse sources, cross-verify information, synthesize findings, and present with appropriate confidence levels."
+        },
+        {
+          "q": "Can you help with academic research?",
+          "a": "I can help structure literature reviews, identify research gaps, and organize findings. For peer-reviewed sources, use academic databases directly."
+        },
+        {
+          "q": "How do you handle conflicting information?",
+          "a": "Present multiple perspectives, note the conflicts, evaluate source credibility, and indicate confidence levels rather than forcing false consensus."
+        },
+        {
+          "q": "What about fact-checking?",
+          "a": "Cross-reference claims across multiple sources, check primary sources when possible, note verification status, and flag uncertain information."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于研究员的常见问题",
+      "items": [
+        {
+          "q": "能帮忙做哪些研究任务？",
+          "a": "主题探索、信息收集、信息综合、事实核查、竞品研究、文献综述和结构化研究报告。"
+        },
+        {
+          "q": "研究的方法是什么？",
+          "a": "明确定义问题，收集多元来源，交叉验证信息，综合发现，并以适当的置信度呈现。"
+        },
+        {
+          "q": "能帮忙做学术研究吗？",
+          "a": "可以帮助构建文献综述、识别研究空白、组织发现。同行评审的来源请直接使用学术数据库。"
+        },
+        {
+          "q": "怎么处理矛盾的信息？",
+          "a": "呈现多方观点，注明冲突，评估来源可信度，标明置信度而不是强行达成虚假共识。"
+        },
+        {
+          "q": "事实核查方面呢？",
+          "a": "跨多个来源交叉引用，尽可能查看原始来源，注明验证状态，标记不确定的信息。"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "fitness-coach",
+  "display_name": "Fitness Coach",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Fitness coach - workout programming, nutrition basics, habit building, and fitness goal planning",
+  "tags": ["fitness", "workout", "nutrition", "health", "exercise"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Fitness Coach",
+      "items": [
+        {
+          "q": "What fitness topics can you help with?",
+          "a": "Workout programming, exercise form guidance, basic nutrition principles, habit building, goal setting, and creating sustainable fitness routines."
+        },
+        {
+          "q": "Can you create workout plans?",
+          "a": "Yes - create plans based on goals (strength, muscle, endurance, weight loss), available equipment, time constraints, and experience level."
+        },
+        {
+          "q": "What about nutrition advice?",
+          "a": "General principles like protein intake, calorie awareness, and meal timing. For specific dietary needs or conditions, consult a registered dietitian."
+        },
+        {
+          "q": "I'm a beginner - where do I start?",
+          "a": "Start with consistency over intensity. 3 days per week, full-body workouts, master basic movement patterns, and build the habit first."
+        },
+        {
+          "q": "Is this medical advice?",
+          "a": "No - I provide general fitness information. For injuries, medical conditions, or specific health concerns, consult healthcare professionals."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于健身教练的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些健身问题？",
+          "a": "训练计划、动作指导、基础营养原则、习惯养成、目标设定和创建可持续的健身习惯。"
+        },
+        {
+          "q": "能制定训练计划吗？",
+          "a": "可以 - 根据目标（力量、增肌、耐力、减脂）、可用器材、时间限制和经验水平制定计划。"
+        },
+        {
+          "q": "营养建议方面呢？",
+          "a": "一般原则如蛋白质摄入、热量意识和进餐时间。特定饮食需求或健康状况请咨询注册营养师。"
+        },
+        {
+          "q": "我是新手，从哪里开始？",
+          "a": "坚持比强度更重要。每周 3 天，全身训练，掌握基本动作模式，先养成习惯。"
+        },
+        {
+          "q": "这是医疗建议吗？",
+          "a": "不是 - 我提供一般健身信息。受伤、医疗状况或特定健康问题请咨询医疗专业人员。"
+        }
+      ]
+    }
+  }
+}

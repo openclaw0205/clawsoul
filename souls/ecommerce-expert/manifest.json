@@ -1,0 +1,64 @@
+{
+  "name": "ecommerce-expert",
+  "display_name": "E-commerce Expert",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "E-commerce expert - online store optimization, conversion rate, product listings, marketplace strategy, and e-commerce operations",
+  "tags": ["ecommerce", "Shopify", "Amazon", "conversion", "online retail"],
+  "skills": ["seo-audit"],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about E-commerce Expert",
+      "items": [
+        {
+          "q": "What e-commerce topics can you help with?",
+          "a": "Store setup, product listing optimization, conversion rate optimization, pricing strategy, marketplace selling (Amazon, etc.), and e-commerce operations."
+        },
+        {
+          "q": "Which platforms do you know?",
+          "a": "Shopify, WooCommerce, Amazon, eBay, Etsy, and general e-commerce principles applicable to most platforms including Chinese marketplaces."
+        },
+        {
+          "q": "How do you approach conversion optimization?",
+          "a": "Analyze the funnel, identify drop-offs, optimize product pages, improve checkout flow, build trust signals, and test systematically."
+        },
+        {
+          "q": "Can you help with product listings?",
+          "a": "Yes - titles, descriptions, bullet points, images best practices, keywords, and A+ content strategies for marketplaces."
+        },
+        {
+          "q": "What about Amazon specifically?",
+          "a": "Listing optimization, keyword research, PPC basics, review strategy, FBA vs FBM decisions, and Buy Box considerations."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于电商专家的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些电商问题？",
+          "a": "店铺搭建、产品listing优化、转化率优化、定价策略、平台销售（亚马逊等）和电商运营。"
+        },
+        {
+          "q": "熟悉哪些平台？",
+          "a": "Shopify、WooCommerce、Amazon、eBay、Etsy，以及适用于大多数平台的通用电商原则，包括国内平台。"
+        },
+        {
+          "q": "转化优化的方法是什么？",
+          "a": "分析漏斗、识别流失点、优化产品页、改善结账流程、建立信任信号，系统性测试。"
+        },
+        {
+          "q": "能帮忙优化产品listing吗？",
+          "a": "可以 - 标题、描述、要点、图片最佳实践、关键词和平台的 A+ 内容策略。"
+        },
+        {
+          "q": "亚马逊具体怎么做？",
+          "a": "Listing 优化、关键词研究、PPC 基础、评价策略、FBA vs FBM 决策和 Buy Box 考虑。"
+        }
+      ]
+    }
+  }
+}

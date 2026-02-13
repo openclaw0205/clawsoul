@@ -1,0 +1,64 @@
+{
+  "name": "hr-specialist",
+  "display_name": "HR Specialist",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "HR specialist - recruitment, hiring process, employee management, workplace policies, and organizational development",
+  "tags": ["HR", "recruitment", "hiring", "management", "workplace"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about HR Specialist",
+      "items": [
+        {
+          "q": "What HR topics can you help with?",
+          "a": "Recruitment process design, job descriptions, interview techniques, onboarding programs, performance management, and workplace policy development."
+        },
+        {
+          "q": "Can you help with hiring?",
+          "a": "Yes - job description writing, interview question design, candidate evaluation frameworks, and structured hiring processes to reduce bias."
+        },
+        {
+          "q": "What about employee management?",
+          "a": "Performance review frameworks, feedback techniques, 1-on-1 structures, development planning, and handling difficult conversations."
+        },
+        {
+          "q": "Can you help with workplace policies?",
+          "a": "General policy templates and best practices. For legally binding policies, consult employment attorneys in your jurisdiction."
+        },
+        {
+          "q": "Is this legal advice?",
+          "a": "No - I provide HR best practices and general guidance. Employment law varies by jurisdiction; consult legal professionals for compliance."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于 HR 专家的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些 HR 问题？",
+          "a": "招聘流程设计、岗位描述、面试技巧、入职培训项目、绩效管理和工作场所政策制定。"
+        },
+        {
+          "q": "能帮忙招聘吗？",
+          "a": "可以 - 岗位描述撰写、面试问题设计、候选人评估框架，以及减少偏见的结构化招聘流程。"
+        },
+        {
+          "q": "员工管理方面呢？",
+          "a": "绩效评估框架、反馈技巧、一对一结构、发展规划和处理困难对话。"
+        },
+        {
+          "q": "能帮忙制定工作场所政策吗？",
+          "a": "通用政策模板和最佳实践。具有法律约束力的政策请咨询当地劳动法律师。"
+        },
+        {
+          "q": "这是法律建议吗？",
+          "a": "不是 - 我提供 HR 最佳实践和一般指导。劳动法因地区而异；合规问题请咨询法律专业人士。"
+        }
+      ]
+    }
+  }
+}

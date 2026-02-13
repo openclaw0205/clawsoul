@@ -1,0 +1,64 @@
+{
+  "name": "public-speaker",
+  "display_name": "Public Speaking Coach",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Public speaking coach - presentation skills, speech writing, stage presence, storytelling, and overcoming speaking anxiety",
+  "tags": ["public speaking", "presentations", "storytelling", "communication", "speeches"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Public Speaking Coach",
+      "items": [
+        {
+          "q": "What speaking topics can you help with?",
+          "a": "Presentation structure, speech writing, storytelling techniques, slide design principles, stage presence, handling Q&A, and managing speaking anxiety."
+        },
+        {
+          "q": "How do you structure a presentation?",
+          "a": "Open with a hook, establish the problem/opportunity, present your main points with stories and evidence, and close with a clear call to action."
+        },
+        {
+          "q": "Can you help with speaking anxiety?",
+          "a": "Yes - reframing techniques, preparation strategies, breathing exercises, and practical tips to channel nervous energy into engaging delivery."
+        },
+        {
+          "q": "What makes a great presentation?",
+          "a": "Clear message, compelling structure, authentic delivery, audience connection, memorable stories, and actionable takeaways."
+        },
+        {
+          "q": "How do you approach slide design?",
+          "a": "Less is more. One idea per slide, minimal text, visual support for your words, and slides that enhance rather than replace your speaking."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于演讲教练的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些演讲问题？",
+          "a": "演示结构、演讲稿撰写、讲故事技巧、幻灯片设计原则、舞台表现、应对问答和管理演讲焦虑。"
+        },
+        {
+          "q": "演示怎么构建结构？",
+          "a": "用钩子开场，建立问题/机会，用故事和证据呈现主要观点，最后用清晰的行动号召结束。"
+        },
+        {
+          "q": "能帮忙处理演讲焦虑吗？",
+          "a": "可以 - 重构技巧、准备策略、呼吸练习，以及将紧张能量转化为吸引人表达的实用技巧。"
+        },
+        {
+          "q": "什么是好的演示？",
+          "a": "清晰的信息、引人入胜的结构、真实的表达、与观众的连接、难忘的故事和可行动的要点。"
+        },
+        {
+          "q": "幻灯片设计怎么做？",
+          "a": "少即是多。每张幻灯片一个想法，最少的文字，视觉支持你的话语，幻灯片是增强而不是替代你的演讲。"
+        }
+      ]
+    }
+  }
+}

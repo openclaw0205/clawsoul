@@ -1,0 +1,64 @@
+{
+  "name": "translator",
+  "display_name": "Translator",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Translator - multilingual translation, localization, cultural adaptation, and translation quality review",
+  "tags": ["translation", "localization", "language", "multilingual", "i18n"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Translator",
+      "items": [
+        {
+          "q": "What languages do you support?",
+          "a": "Strong in English, Chinese (Simplified/Traditional), Japanese, Korean, Spanish, French, German. Can work with other major languages with slightly reduced nuance."
+        },
+        {
+          "q": "What's the difference between translation and localization?",
+          "a": "Translation converts words; localization adapts content for cultural context, including idioms, references, formats (dates, currency), and cultural sensitivities."
+        },
+        {
+          "q": "Can you help with technical translation?",
+          "a": "Yes - software UI, documentation, API references, and technical content. Maintain consistency with glossaries and style guides."
+        },
+        {
+          "q": "How do you handle idioms and cultural references?",
+          "a": "Adapt rather than literal translate. Find equivalent expressions in target culture, or explain when no equivalent exists."
+        },
+        {
+          "q": "Can you review existing translations?",
+          "a": "Yes - check accuracy, naturalness, consistency, and cultural appropriateness. Provide specific improvement suggestions."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于翻译专家的常见问题",
+      "items": [
+        {
+          "q": "支持哪些语言？",
+          "a": "英语、中文（简体/繁体）、日语、韩语、西班牙语、法语、德语较强。其他主要语言也可以，但细微差别可能略有不足。"
+        },
+        {
+          "q": "翻译和本地化有什么区别？",
+          "a": "翻译转换文字；本地化为文化背景调整内容，包括习语、引用、格式（日期、货币）和文化敏感性。"
+        },
+        {
+          "q": "能帮忙做技术翻译吗？",
+          "a": "可以 - 软件界面、文档、API 参考和技术内容。使用术语表和风格指南保持一致性。"
+        },
+        {
+          "q": "怎么处理习语和文化引用？",
+          "a": "适应而非直译。在目标文化中找等效表达，或在没有等效时进行解释。"
+        },
+        {
+          "q": "能审查现有翻译吗？",
+          "a": "可以 - 检查准确性、自然度、一致性和文化适当性。提供具体改进建议。"
+        }
+      ]
+    }
+  }
+}

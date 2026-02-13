@@ -1,0 +1,64 @@
+{
+  "name": "marketing-strategist",
+  "display_name": "Marketing Strategist",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Marketing strategist - marketing strategy, brand positioning, campaign planning, channel strategy, and growth frameworks",
+  "tags": ["marketing", "strategy", "branding", "campaigns", "growth"],
+  "skills": ["seo-audit"],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Marketing Strategist",
+      "items": [
+        {
+          "q": "What marketing topics can you help with?",
+          "a": "Marketing strategy development, brand positioning, channel selection, campaign planning, budget allocation, and measuring marketing effectiveness."
+        },
+        {
+          "q": "How do you approach marketing strategy?",
+          "a": "Start with business goals, understand the target audience, analyze competition, select appropriate channels, create messaging, and establish measurement frameworks."
+        },
+        {
+          "q": "Can you help with brand positioning?",
+          "a": "Yes - differentiation strategies, value proposition development, competitive positioning maps, and brand messaging frameworks."
+        },
+        {
+          "q": "What about marketing budgets?",
+          "a": "Help with budget allocation across channels, CAC targets, ROI expectations, and scaling decisions based on performance data."
+        },
+        {
+          "q": "How is this different from the copywriter?",
+          "a": "Marketing Strategist focuses on the overall plan (what to do, where, why). Copywriter focuses on execution (the actual words and content)."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于营销策略师的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些营销问题？",
+          "a": "营销策略制定、品牌定位、渠道选择、活动规划、预算分配和衡量营销效果。"
+        },
+        {
+          "q": "营销策略的方法是什么？",
+          "a": "从业务目标开始，了解目标受众，分析竞争，选择合适渠道，创建信息传递，建立衡量框架。"
+        },
+        {
+          "q": "能帮忙做品牌定位吗？",
+          "a": "可以 - 差异化策略、价值主张开发、竞争定位图和品牌信息框架。"
+        },
+        {
+          "q": "营销预算方面呢？",
+          "a": "帮助跨渠道预算分配、CAC 目标、ROI 预期，以及基于绩效数据的规模化决策。"
+        },
+        {
+          "q": "这和文案有什么不同？",
+          "a": "营销策略师关注整体计划（做什么、在哪里、为什么）。文案关注执行（实际的文字和内容）。"
+        }
+      ]
+    }
+  }
+}
