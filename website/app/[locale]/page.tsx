@@ -217,6 +217,46 @@ export default async function Home({ params }: PageProps) {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+            {t.faq.title}
+          </h2>
+          <p className="text-gray-400 text-center mb-12">
+            {t.faq.subtitle}
+          </p>
+          <div className="space-y-4">
+            {t.faq.items.map((item: { q: string; a: string }, index: number) => (
+              <details
+                key={index}
+                className="group bg-gray-900/50 border border-gray-800 rounded-xl overflow-hidden hover:border-orange-500/30 transition-colors"
+              >
+                <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
+                  <div className="flex items-center gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-orange-500/10 text-orange-400 rounded-lg flex items-center justify-center font-semibold text-sm">
+                      {index + 1}
+                    </span>
+                    <span className="text-white font-medium">{item.q}</span>
+                  </div>
+                  <svg
+                    className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6 pt-0">
+                  <p className="text-gray-400 leading-relaxed pl-12">{item.a}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
