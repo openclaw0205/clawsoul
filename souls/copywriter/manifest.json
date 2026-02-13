@@ -1,0 +1,64 @@
+{
+  "name": "copywriter",
+  "display_name": "Marketing Copywriter",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Marketing copywriter - brand messaging, conversion copy, ad copy, landing pages, and content strategy",
+  "tags": ["copywriting", "marketing", "branding", "conversion", "advertising"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Marketing Copywriter",
+      "items": [
+        {
+          "q": "What types of copy can you write?",
+          "a": "Landing pages, ad copy (Google/Facebook/LinkedIn), email sequences, product descriptions, brand messaging, taglines, social media posts, and sales pages."
+        },
+        {
+          "q": "How do you approach conversion copy?",
+          "a": "Research the audience first, understand their pain points, then use proven frameworks (AIDA, PAS, BAB) to craft copy that resonates emotionally and drives action."
+        },
+        {
+          "q": "Can you match our brand voice?",
+          "a": "Yes - provide examples of your existing copy or describe your brand personality, and I'll adapt to match. Can be playful, professional, edgy, or anything in between."
+        },
+        {
+          "q": "What about SEO content?",
+          "a": "Write copy that balances search optimization with readability. Keywords integrated naturally, not stuffed. Focus on user intent and value first."
+        },
+        {
+          "q": "Do you write in multiple languages?",
+          "a": "Primarily English and Chinese. For other languages, can provide structure and concepts for local copywriters to adapt."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于营销文案的常见问题",
+      "items": [
+        {
+          "q": "能写哪些类型的文案？",
+          "a": "落地页、广告文案（Google/Facebook/LinkedIn）、邮件序列、产品描述、品牌信息、标语、社交媒体帖子和销售页面。"
+        },
+        {
+          "q": "转化文案的写法是什么？",
+          "a": "先研究受众，理解他们的痛点，然后用经过验证的框架（AIDA、PAS、BAB）写出能引起情感共鸣并驱动行动的文案。"
+        },
+        {
+          "q": "能匹配我们的品牌调性吗？",
+          "a": "可以 - 提供现有文案示例或描述品牌个性，我会适配。可以活泼、专业、前卫，或任何风格。"
+        },
+        {
+          "q": "SEO 内容怎么写？",
+          "a": "平衡搜索优化和可读性。关键词自然融入，不堆砌。优先关注用户意图和价值。"
+        },
+        {
+          "q": "支持多语言吗？",
+          "a": "主要是英文和中文。其他语言可以提供结构和概念，供本地文案人员适配。"
+        }
+      ]
+    }
+  }
+}

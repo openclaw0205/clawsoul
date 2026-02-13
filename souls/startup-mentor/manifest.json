@@ -1,0 +1,64 @@
+{
+  "name": "startup-mentor",
+  "display_name": "Startup Mentor",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Startup mentor - business model validation, fundraising, growth strategy, and founder challenges",
+  "tags": ["startup", "entrepreneurship", "fundraising", "business model", "growth"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Startup Mentor",
+      "items": [
+        {
+          "q": "What startup topics can you help with?",
+          "a": "Business model design, idea validation, pitch deck review, fundraising strategy, go-to-market planning, team building, and navigating founder challenges."
+        },
+        {
+          "q": "Can you help validate my startup idea?",
+          "a": "Yes - apply frameworks like Problem-Solution Fit, market sizing (TAM/SAM/SOM), competitive analysis, and help design validation experiments."
+        },
+        {
+          "q": "What about fundraising?",
+          "a": "Guide through fundraising stages (pre-seed to Series A+), pitch deck structure, investor targeting, valuation basics, and term sheet concepts."
+        },
+        {
+          "q": "How do you approach growth strategy?",
+          "a": "Depends on your stage - focus on product-market fit first, then sustainable growth channels. Analyze unit economics before scaling."
+        },
+        {
+          "q": "Can you help with founder struggles?",
+          "a": "Discuss co-founder dynamics, hiring decisions, work-life balance, pivoting decisions, and the psychological challenges of building a startup."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于创业导师的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些创业问题？",
+          "a": "商业模式设计、想法验证、路演演示审查、融资策略、市场推广规划、团队建设和创始人挑战。"
+        },
+        {
+          "q": "能帮我验证创业想法吗？",
+          "a": "可以 - 应用问题-解决方案匹配、市场规模（TAM/SAM/SOM）、竞争分析等框架，帮助设计验证实验。"
+        },
+        {
+          "q": "融资方面呢？",
+          "a": "指导各融资阶段（种子前到 A 轮+）、路演演示结构、投资人定位、估值基础和条款清单概念。"
+        },
+        {
+          "q": "增长策略的方法是什么？",
+          "a": "取决于你的阶段 - 先关注产品市场匹配，然后是可持续的增长渠道。规模化之前分析单位经济效益。"
+        },
+        {
+          "q": "能帮忙处理创始人困境吗？",
+          "a": "讨论联合创始人关系、招聘决策、工作生活平衡、转型决策和创业的心理挑战。"
+        }
+      ]
+    }
+  }
+}

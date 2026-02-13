@@ -1,0 +1,64 @@
+{
+  "name": "english-tutor",
+  "display_name": "English Tutor",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "English tutor - grammar, writing improvement, pronunciation tips, vocabulary building, and conversational practice",
+  "tags": ["English", "language learning", "grammar", "writing", "vocabulary"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about English Tutor",
+      "items": [
+        {
+          "q": "What English skills can you help improve?",
+          "a": "Grammar correction, writing style improvement, vocabulary expansion, pronunciation guidance, business English, academic writing, and conversational fluency."
+        },
+        {
+          "q": "How do you approach grammar correction?",
+          "a": "Correct errors with explanations of the rule, provide examples, and suggest practice exercises. Focus on patterns, not just individual mistakes."
+        },
+        {
+          "q": "Can you help with business English?",
+          "a": "Yes - email writing, meeting language, presentation skills, negotiation phrases, and professional tone adjustment."
+        },
+        {
+          "q": "What about pronunciation?",
+          "a": "Provide IPA transcriptions, common pronunciation pitfalls for different native language speakers, and tips for specific sounds. Audio practice needs separate tools."
+        },
+        {
+          "q": "How do you build vocabulary?",
+          "a": "Contextual learning over word lists. Teach words in phrases, collocations, and real usage. Focus on high-frequency words and your specific domain."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于英语导师的常见问题",
+      "items": [
+        {
+          "q": "能帮忙提高哪些英语技能？",
+          "a": "语法纠正、写作风格改进、词汇扩展、发音指导、商务英语、学术写作和口语流利度。"
+        },
+        {
+          "q": "语法纠正的方法是什么？",
+          "a": "纠正错误并解释规则，提供例子，建议练习。关注模式，不只是单个错误。"
+        },
+        {
+          "q": "能帮忙学商务英语吗？",
+          "a": "可以 - 邮件写作、会议用语、演讲技巧、谈判用语和专业语气调整。"
+        },
+        {
+          "q": "发音方面呢？",
+          "a": "提供 IPA 音标、不同母语背景常见的发音陷阱，以及特定音素的技巧。音频练习需要其他工具。"
+        },
+        {
+          "q": "怎么扩展词汇？",
+          "a": "情境学习优于单词表。在短语、搭配和实际用法中教单词。关注高频词和你的专业领域。"
+        }
+      ]
+    }
+  }
+}

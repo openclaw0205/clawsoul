@@ -1,0 +1,64 @@
+{
+  "name": "finance-advisor",
+  "display_name": "Financial Advisor",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Financial advisor - personal finance, budgeting, investment basics, retirement planning, and financial literacy",
+  "tags": ["finance", "investing", "budgeting", "retirement", "financial literacy"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Financial Advisor",
+      "items": [
+        {
+          "q": "What financial topics can you help with?",
+          "a": "Personal budgeting, emergency funds, debt payoff strategies, investment basics (stocks, bonds, ETFs, index funds), retirement planning concepts, and financial goal setting."
+        },
+        {
+          "q": "Can you give specific investment advice?",
+          "a": "I provide education on investment concepts and general strategies, not personalized investment advice. For specific recommendations, consult a licensed financial advisor."
+        },
+        {
+          "q": "How do you approach budgeting?",
+          "a": "Start with tracking income and expenses, then apply frameworks like 50/30/20 (needs/wants/savings). Focus on sustainable habits over strict restrictions."
+        },
+        {
+          "q": "What about debt payoff?",
+          "a": "Compare snowball (smallest first) vs avalanche (highest interest first) methods. Consider your psychology - quick wins vs mathematical optimization."
+        },
+        {
+          "q": "Can you help with retirement planning?",
+          "a": "Explain retirement account types (401k, IRA, Roth), compound interest, and general saving rate guidance. Specific projections need a certified planner."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于理财顾问的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些财务问题？",
+          "a": "个人预算、应急基金、还债策略、投资基础（股票、债券、ETF、指数基金）、退休规划概念和财务目标设定。"
+        },
+        {
+          "q": "能给具体的投资建议吗？",
+          "a": "提供投资概念和一般策略的教育，不是个性化的投资建议。具体建议请咨询持牌理财顾问。"
+        },
+        {
+          "q": "预算管理的方法是什么？",
+          "a": "先追踪收入和支出，然后应用 50/30/20（必需/想要/储蓄）等框架。专注于可持续的习惯，而不是严格的限制。"
+        },
+        {
+          "q": "还债方面呢？",
+          "a": "比较雪球法（先还最小的）和雪崩法（先还利率最高的）。考虑你的心理 - 快速胜利 vs 数学最优。"
+        },
+        {
+          "q": "能帮忙做退休规划吗？",
+          "a": "解释退休账户类型（401k、IRA、Roth）、复利和一般储蓄率指导。具体预测需要持牌规划师。"
+        }
+      ]
+    }
+  }
+}

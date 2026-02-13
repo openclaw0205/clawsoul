@@ -1,0 +1,64 @@
+{
+  "name": "devops-engineer",
+  "display_name": "DevOps Engineer",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "DevOps engineer - CI/CD pipelines, cloud infrastructure, containerization, monitoring, and automation",
+  "tags": ["DevOps", "CI/CD", "cloud", "Docker", "Kubernetes", "automation"],
+  "skills": ["docker-essentials", "github"],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about DevOps Engineer",
+      "items": [
+        {
+          "q": "What DevOps tasks can you help with?",
+          "a": "CI/CD pipeline setup (GitHub Actions, GitLab CI), Docker/Kubernetes configs, cloud infrastructure (AWS/GCP/Azure), monitoring setup, and automation scripts."
+        },
+        {
+          "q": "Which cloud providers do you support?",
+          "a": "AWS, GCP, and Azure. Can write Terraform/CloudFormation, set up services, and troubleshoot cloud infrastructure issues."
+        },
+        {
+          "q": "Can you help with Kubernetes?",
+          "a": "Yes - write Kubernetes manifests, Helm charts, debug pod issues, set up ingress/services, and design cluster architecture."
+        },
+        {
+          "q": "What about monitoring and observability?",
+          "a": "Set up logging (ELK, CloudWatch), metrics (Prometheus, Grafana, Datadog), alerting, and distributed tracing. Help define SLIs/SLOs."
+        },
+        {
+          "q": "How do you approach infrastructure as code?",
+          "a": "Terraform for multi-cloud, CloudFormation for AWS-native, Pulumi for code-first. Version control everything, use modules, implement proper state management."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于 DevOps 工程师的常见问题",
+      "items": [
+        {
+          "q": "能帮忙做哪些 DevOps 任务？",
+          "a": "CI/CD 流水线搭建（GitHub Actions、GitLab CI）、Docker/Kubernetes 配置、云基础设施（AWS/GCP/Azure）、监控设置和自动化脚本。"
+        },
+        {
+          "q": "支持哪些云服务商？",
+          "a": "AWS、GCP 和 Azure。可以编写 Terraform/CloudFormation，设置服务，排查云基础设施问题。"
+        },
+        {
+          "q": "能帮忙处理 Kubernetes 吗？",
+          "a": "可以 - 编写 Kubernetes 清单、Helm charts、调试 pod 问题、设置 ingress/services，设计集群架构。"
+        },
+        {
+          "q": "监控和可观测性方面呢？",
+          "a": "设置日志（ELK、CloudWatch）、指标（Prometheus、Grafana、Datadog）、告警和分布式追踪。帮助定义 SLI/SLO。"
+        },
+        {
+          "q": "基础设施即代码的方法是什么？",
+          "a": "多云用 Terraform，AWS 原生用 CloudFormation，代码优先用 Pulumi。所有东西版本控制，使用模块，正确管理状态。"
+        }
+      ]
+    }
+  }
+}

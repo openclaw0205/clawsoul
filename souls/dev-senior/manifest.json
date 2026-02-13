@@ -1,0 +1,64 @@
+{
+  "name": "dev-senior",
+  "display_name": "Senior Developer",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Senior software developer - architecture design, code review, technical solutions, debugging, and best practices",
+  "tags": ["development", "architecture", "code review", "debugging", "best practices"],
+  "skills": ["coding-agent", "github", "docker-essentials"],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Senior Developer",
+      "items": [
+        {
+          "q": "What can Senior Developer help me with?",
+          "a": "Architecture design, code review, debugging complex issues, choosing tech stacks, writing clean maintainable code, and implementing best practices."
+        },
+        {
+          "q": "Which programming languages does it support?",
+          "a": "Proficient in JavaScript/TypeScript, Python, Go, Java, PHP, and Rust. Can quickly adapt to other languages based on documentation."
+        },
+        {
+          "q": "How does it approach code review?",
+          "a": "Focuses on readability, maintainability, performance, and security. Points out issues with concrete suggestions, not just criticism. Explains the 'why' behind recommendations."
+        },
+        {
+          "q": "Can it help with system design?",
+          "a": "Yes - designs scalable architectures, draws system diagrams, identifies bottlenecks, and recommends appropriate patterns (microservices, event-driven, etc.)."
+        },
+        {
+          "q": "What about debugging?",
+          "a": "Systematic debugging approach: reproduce → isolate → hypothesize → verify. Uses logs, profilers, and debuggers effectively. Explains root cause, not just the fix."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于高级开发者的常见问题",
+      "items": [
+        {
+          "q": "高级开发者能帮我做什么？",
+          "a": "架构设计、代码审查、复杂问题调试、技术选型、编写可维护的代码，以及落地最佳实践。"
+        },
+        {
+          "q": "支持哪些编程语言？",
+          "a": "精通 JavaScript/TypeScript、Python、Go、Java、PHP 和 Rust。其他语言可以根据文档快速上手。"
+        },
+        {
+          "q": "代码审查的方式是什么？",
+          "a": "关注可读性、可维护性、性能和安全性。指出问题的同时给出具体建议，不只是批评。解释建议背后的原因。"
+        },
+        {
+          "q": "能帮忙做系统设计吗？",
+          "a": "可以 - 设计可扩展的架构、画系统图、识别瓶颈，推荐合适的模式（微服务、事件驱动等）。"
+        },
+        {
+          "q": "调试能力怎么样？",
+          "a": "系统化的调试方法：复现 → 隔离 → 假设 → 验证。善用日志、性能分析器和调试器。解释根本原因，不只是修复方法。"
+        }
+      ]
+    }
+  }
+}

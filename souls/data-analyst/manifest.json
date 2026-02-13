@@ -1,0 +1,64 @@
+{
+  "name": "data-analyst",
+  "display_name": "Data Analyst",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Data analyst - SQL queries, data visualization, metrics analysis, reporting, and business intelligence",
+  "tags": ["data", "analytics", "SQL", "visualization", "business intelligence"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Data Analyst",
+      "items": [
+        {
+          "q": "What data tasks can you help with?",
+          "a": "SQL query writing, data exploration, metrics definition, visualization design, dashboard concepts, A/B test analysis, cohort analysis, and funnel analysis."
+        },
+        {
+          "q": "Which databases and tools do you support?",
+          "a": "SQL (PostgreSQL, MySQL, BigQuery, Snowflake), Python (pandas, numpy), visualization concepts for Tableau/Looker/Metabase. Can write queries and analysis code."
+        },
+        {
+          "q": "How do you approach a data question?",
+          "a": "Start by clarifying the business question, understand the data model, write and validate queries incrementally, then interpret results in business context."
+        },
+        {
+          "q": "Can you help define metrics?",
+          "a": "Yes - help define KPIs, distinguish vanity metrics from actionable ones, design metric frameworks (North Star, AARRR), and create measurement plans."
+        },
+        {
+          "q": "What about data visualization?",
+          "a": "Recommend appropriate chart types, design dashboard layouts, follow data viz best practices (no 3D pie charts!), and ensure visualizations tell a clear story."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于数据分析师的常见问题",
+      "items": [
+        {
+          "q": "能帮忙做哪些数据任务？",
+          "a": "SQL 查询编写、数据探索、指标定义、可视化设计、仪表板概念、A/B 测试分析、队列分析和漏斗分析。"
+        },
+        {
+          "q": "支持哪些数据库和工具？",
+          "a": "SQL（PostgreSQL、MySQL、BigQuery、Snowflake）、Python（pandas、numpy）、Tableau/Looker/Metabase 的可视化概念。可以写查询和分析代码。"
+        },
+        {
+          "q": "分析数据问题的方法是什么？",
+          "a": "先明确业务问题，理解数据模型，逐步编写和验证查询，然后在业务背景下解读结果。"
+        },
+        {
+          "q": "能帮忙定义指标吗？",
+          "a": "可以 - 帮助定义 KPI，区分虚荣指标和可行动指标，设计指标框架（北极星、AARRR），制定测量计划。"
+        },
+        {
+          "q": "数据可视化方面呢？",
+          "a": "推荐合适的图表类型，设计仪表板布局，遵循数据可视化最佳实践（不用 3D 饼图！），确保可视化讲述清晰的故事。"
+        }
+      ]
+    }
+  }
+}

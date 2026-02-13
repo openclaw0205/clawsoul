@@ -1,0 +1,3 @@
+coding-agent
+github
+docker-essentials

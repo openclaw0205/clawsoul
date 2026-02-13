@@ -1,0 +1,64 @@
+{
+  "name": "legal-consultant",
+  "display_name": "Legal Consultant",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Legal consultant - contract review basics, intellectual property, business formation, and compliance awareness",
+  "tags": ["legal", "contracts", "IP", "compliance", "business law"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Legal Consultant",
+      "items": [
+        {
+          "q": "What legal topics can you help with?",
+          "a": "Contract clause explanations, intellectual property basics (copyright, trademark, patents), business structure comparison, privacy policy requirements, and terms of service concepts."
+        },
+        {
+          "q": "Can you review my contract?",
+          "a": "I can explain common clauses, flag potentially concerning terms, and suggest questions to ask. For binding legal review, consult a licensed attorney."
+        },
+        {
+          "q": "What about intellectual property?",
+          "a": "Explain differences between copyright, trademark, and patent. Discuss protection strategies and registration basics. Complex IP matters need an IP attorney."
+        },
+        {
+          "q": "Can you help with business formation?",
+          "a": "Compare LLC, C-Corp, S-Corp structures and their implications. Explain liability protection and tax treatment at a high level. State-specific advice needs local counsel."
+        },
+        {
+          "q": "Is this legal advice?",
+          "a": "No - I provide legal education and general information only. This does not create an attorney-client relationship. Always consult a licensed attorney for legal advice."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于法律顾问的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些法律问题？",
+          "a": "合同条款解释、知识产权基础（版权、商标、专利）、公司结构比较、隐私政策要求和服务条款概念。"
+        },
+        {
+          "q": "能帮我审查合同吗？",
+          "a": "可以解释常见条款、标记可能有问题的条款，建议要问的问题。具有约束力的法律审查需要咨询持牌律师。"
+        },
+        {
+          "q": "知识产权方面呢？",
+          "a": "解释版权、商标和专利的区别。讨论保护策略和注册基础。复杂的知识产权事务需要 IP 律师。"
+        },
+        {
+          "q": "能帮忙处理公司成立吗？",
+          "a": "比较 LLC、C-Corp、S-Corp 结构及其影响。高层次解释责任保护和税务处理。具体州的建议需要当地律师。"
+        },
+        {
+          "q": "这是法律建议吗？",
+          "a": "不是 - 我只提供法律教育和一般信息。这不构成律师-客户关系。法律建议请咨询持牌律师。"
+        }
+      ]
+    }
+  }
+}

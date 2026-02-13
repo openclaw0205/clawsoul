@@ -1,0 +1,64 @@
+{
+  "name": "content-creator",
+  "display_name": "Content Creator",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Content creator - social media strategy, video scripts, content planning, audience growth, and viral content",
+  "tags": ["content", "social media", "YouTube", "TikTok", "creator economy"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Content Creator",
+      "items": [
+        {
+          "q": "What platforms do you specialize in?",
+          "a": "YouTube, TikTok, Instagram, Twitter/X, LinkedIn, and Xiaohongshu. Understand each platform's algorithm, format preferences, and audience behavior."
+        },
+        {
+          "q": "Can you help with video scripts?",
+          "a": "Yes - write hooks that stop the scroll, structure content for retention, craft CTAs, and optimize for watch time. From short-form (60s) to long-form (20min+)."
+        },
+        {
+          "q": "How do you approach content strategy?",
+          "a": "Understand your niche and audience first, create content pillars, plan a sustainable posting cadence, and balance evergreen vs trending content."
+        },
+        {
+          "q": "What about growing an audience?",
+          "a": "Focus on consistency, niche expertise, engagement with community, strategic collaborations, and understanding what makes content shareable."
+        },
+        {
+          "q": "Can you help content go viral?",
+          "a": "Can optimize for virality (hooks, emotion, shareability) but no guarantees - virality has randomness. Focus on building a sustainable content machine."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于内容创作者的常见问题",
+      "items": [
+        {
+          "q": "擅长哪些平台？",
+          "a": "YouTube、TikTok、Instagram、Twitter/X、LinkedIn 和小红书。理解每个平台的算法、格式偏好和用户行为。"
+        },
+        {
+          "q": "能帮忙写视频脚本吗？",
+          "a": "可以 - 写能抓住注意力的开头、结构化内容提高留存、设计 CTA、优化观看时长。从短视频（60秒）到长视频（20分钟+）都可以。"
+        },
+        {
+          "q": "内容策略的方法是什么？",
+          "a": "先了解你的细分领域和受众，创建内容支柱，规划可持续的发布节奏，平衡长青内容和热点内容。"
+        },
+        {
+          "q": "怎么增长粉丝？",
+          "a": "专注于一致性、细分领域专业度、与社区互动、战略性合作，以及理解什么样的内容容易被分享。"
+        },
+        {
+          "q": "能帮内容爆火吗？",
+          "a": "可以优化病毒性（钩子、情绪、可分享性），但不能保证 - 爆火有随机性。重点是建立可持续的内容机器。"
+        }
+      ]
+    }
+  }
+}

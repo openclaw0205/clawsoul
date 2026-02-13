@@ -1,0 +1,64 @@
+{
+  "name": "ux-designer",
+  "display_name": "UX Designer",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "UX designer - user research, wireframes, interaction design, usability testing, and design systems",
+  "tags": ["UX", "design", "user research", "wireframes", "usability"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about UX Designer",
+      "items": [
+        {
+          "q": "What UX tasks can you help with?",
+          "a": "User research planning, persona creation, user journey mapping, wireframe descriptions, interaction design specs, usability heuristic reviews, and design system documentation."
+        },
+        {
+          "q": "Can you create actual designs?",
+          "a": "I can describe wireframes and layouts in detail, create ASCII wireframes, and write detailed design specs that a visual designer can implement. For actual pixels, you'd need Figma/Sketch."
+        },
+        {
+          "q": "How do you approach UX problems?",
+          "a": "User-centered design process: understand users → define problems → ideate solutions → prototype → test → iterate. Always start with 'who are we designing for?'"
+        },
+        {
+          "q": "Can you review existing designs?",
+          "a": "Yes - apply Nielsen's 10 heuristics, accessibility guidelines (WCAG), and identify usability issues with severity ratings and improvement recommendations."
+        },
+        {
+          "q": "What about mobile vs web design?",
+          "a": "Understand platform conventions (iOS HIG, Material Design), responsive design principles, and mobile-first thinking. Design adapts to the platform's strengths."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于 UX 设计师的常见问题",
+      "items": [
+        {
+          "q": "能帮忙做哪些 UX 任务？",
+          "a": "用户研究规划、用户画像创建、用户旅程地图、线框图描述、交互设计规范、可用性启发式评审和设计系统文档。"
+        },
+        {
+          "q": "能创建实际的设计吗？",
+          "a": "可以详细描述线框图和布局，创建 ASCII 线框图，编写详细的设计规范供视觉设计师实现。实际的像素级设计需要 Figma/Sketch。"
+        },
+        {
+          "q": "解决 UX 问题的方法是什么？",
+          "a": "以用户为中心的设计流程：了解用户 → 定义问题 → 构思方案 → 原型 → 测试 → 迭代。始终从「我们为谁设计」开始。"
+        },
+        {
+          "q": "能评审现有设计吗？",
+          "a": "可以 - 应用尼尔森十大可用性原则、无障碍指南（WCAG），识别可用性问题并给出严重程度评级和改进建议。"
+        },
+        {
+          "q": "移动端和网页设计有什么不同？",
+          "a": "理解平台规范（iOS HIG、Material Design）、响应式设计原则和移动优先思维。设计要适应平台的优势。"
+        }
+      ]
+    }
+  }
+}
