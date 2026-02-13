@@ -7,6 +7,69 @@
     "backHome": "← Back to home",
     "language": "Language"
   },
+  "landing": {
+    "meta": {
+      "title": "Soul Templates for OpenClaw",
+      "description": "Give your OpenClaw AI assistant domain expertise instantly with community-curated personality templates."
+    },
+    "hero": {
+      "badge": "30+ Expert Souls Available",
+      "title": "Transform Your AI Into",
+      "titleHighlight": "Domain Experts",
+      "description": "ClawSoul is a community-driven collection of soul templates that give your OpenClaw AI assistant instant expertise in product management, SEO, development, design, and more.",
+      "cta": "Explore Soul Library",
+      "github": "View on GitHub"
+    },
+    "showcase": {
+      "title": "Curated Soul Templates",
+      "description": "{count} expert personalities ready to install"
+    },
+    "features": {
+      "title": "Why ClawSoul?",
+      "items": [
+        {
+          "icon": "⚡",
+          "title": "Instant Expertise",
+          "description": "Skip weeks of prompt engineering. Each soul is carefully crafted with domain knowledge, best practices, and optimized behaviors."
+        },
+        {
+          "icon": "🎯",
+          "title": "Domain-Specific",
+          "description": "From product managers to SEO experts, from developers to designers. Find the exact expertise you need."
+        },
+        {
+          "icon": "🔧",
+          "title": "Fully Customizable",
+          "description": "Every soul is open source. Modify, extend, or combine them to create your perfect AI assistant."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Get Started in 3 Steps",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Browse Souls",
+          "description": "Explore our curated collection and find the expertise you need"
+        },
+        {
+          "number": "2",
+          "title": "One-Click Install",
+          "description": "Copy the install command or download the soul files directly"
+        },
+        {
+          "number": "3",
+          "title": "Start Using",
+          "description": "Your OpenClaw assistant now has domain expertise!"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Share Your Expertise",
+      "description": "Have domain knowledge to share? Create a soul template and help thousands of AI assistants become experts like you.",
+      "button": "Submit Your Soul"
+    }
+  },
   "hero": {
     "title": "Find Awesome",
     "titleHighlight": "Soul Templates",

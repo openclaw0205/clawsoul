@@ -7,6 +7,69 @@
     "backHome": "← 返回首页",
     "language": "语言"
   },
+  "landing": {
+    "meta": {
+      "title": "OpenClaw 灵魂模板库",
+      "description": "为你的 OpenClaw AI 助理注入领域专业知识，社区精选的人格模板库。"
+    },
+    "hero": {
+      "badge": "已收录 30+ 专家灵魂",
+      "title": "让 AI 助理成为",
+      "titleHighlight": "领域专家",
+      "description": "ClawSoul 是社区驱动的灵魂模板库，让你的 OpenClaw AI 助理瞬间具备产品管理、SEO、开发、设计等领域的专业能力。",
+      "cta": "浏览灵魂库",
+      "github": "查看源码"
+    },
+    "showcase": {
+      "title": "精选灵魂模板",
+      "description": "{count} 个专家人格，即装即用"
+    },
+    "features": {
+      "title": "为什么选择 ClawSoul？",
+      "items": [
+        {
+          "icon": "⚡",
+          "title": "即刻专业",
+          "description": "省去数周的提示词调试。每个灵魂都经过精心设计，包含领域知识、最佳实践和优化行为。"
+        },
+        {
+          "icon": "🎯",
+          "title": "领域专精",
+          "description": "从产品经理到 SEO 专家，从开发工程师到设计师。找到你需要的精准专业能力。"
+        },
+        {
+          "icon": "🔧",
+          "title": "完全可定制",
+          "description": "所有灵魂完全开源。随意修改、扩展或组合，打造你的专属 AI 助理。"
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "三步上手",
+      "steps": [
+        {
+          "number": "1",
+          "title": "浏览灵魂",
+          "description": "探索精选集合，找到你需要的专业能力"
+        },
+        {
+          "number": "2",
+          "title": "一键安装",
+          "description": "复制安装命令或直接下载灵魂文件"
+        },
+        {
+          "number": "3",
+          "title": "开始使用",
+          "description": "你的 OpenClaw 助理现在是领域专家了！"
+        }
+      ]
+    },
+    "cta": {
+      "title": "分享你的专业知识",
+      "description": "有领域知识想分享？创建灵魂模板，帮助数千个 AI 助理成为像你一样的专家。",
+      "button": "提交你的灵魂"
+    }
+  },
   "hero": {
     "title": "发现优秀的",
     "titleHighlight": "灵魂模板",
