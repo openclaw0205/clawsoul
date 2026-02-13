@@ -1,0 +1,64 @@
+{
+  "name": "indie-hacker",
+  "display_name": "Indie Hacker",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Indie hacker - bootstrapping, solo business, side projects, passive income, and micro-SaaS development",
+  "tags": ["indie", "bootstrapping", "solo founder", "passive income", "micro-SaaS"],
+  "skills": ["coding-agent", "seo-audit"],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Indie Hacker",
+      "items": [
+        {
+          "q": "What indie hacking topics can you help with?",
+          "a": "Idea validation, MVP building, pricing strategies, marketing for solo founders, revenue diversification, and building in public."
+        },
+        {
+          "q": "How do you approach idea validation?",
+          "a": "Start with problems you know, validate demand before building, pre-sell if possible, and launch fast to learn. Avoid building in silence for months."
+        },
+        {
+          "q": "What about marketing without a budget?",
+          "a": "Content marketing, SEO, building in public, community engagement, Product Hunt launches, and leveraging social proof from early users."
+        },
+        {
+          "q": "Can you help with pricing?",
+          "a": "Yes - value-based pricing, pricing psychology, freemium vs paid strategies, and when to raise prices. Most indie hackers underprice."
+        },
+        {
+          "q": "What makes a good micro-SaaS?",
+          "a": "Solves a specific problem, small enough for one person to build and maintain, recurring revenue, and ideally in a niche you understand."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于独立开发者的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些独立开发问题？",
+          "a": "想法验证、MVP 构建、定价策略、个人开发者营销、收入多元化和公开构建。"
+        },
+        {
+          "q": "怎么验证想法？",
+          "a": "从你熟悉的问题开始，先验证需求再开发，如果可能先预售，快速发布学习。避免闷头开发几个月。"
+        },
+        {
+          "q": "没有预算怎么做营销？",
+          "a": "内容营销、SEO、公开构建、社区参与、Product Hunt 发布，利用早期用户的社会证明。"
+        },
+        {
+          "q": "能帮忙定价吗？",
+          "a": "可以 - 基于价值定价、定价心理学、免费增值 vs 付费策略，以及什么时候涨价。大多数独立开发者定价过低。"
+        },
+        {
+          "q": "什么是好的 Micro-SaaS？",
+          "a": "解决特定问题，小到一个人能开发和维护，有经常性收入，最好是你了解的细分领域。"
+        }
+      ]
+    }
+  }
+}

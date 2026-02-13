@@ -1,0 +1,64 @@
+{
+  "name": "customer-success",
+  "display_name": "Customer Success Manager",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Customer success manager - onboarding, retention, churn prevention, upselling, and customer health scoring",
+  "tags": ["customer success", "retention", "onboarding", "churn", "SaaS"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Customer Success Manager",
+      "items": [
+        {
+          "q": "What customer success topics can you help with?",
+          "a": "Customer onboarding programs, health scoring, churn prediction, QBR preparation, expansion playbooks, and building CS processes from scratch."
+        },
+        {
+          "q": "How do you approach customer onboarding?",
+          "a": "Define success milestones, create structured onboarding journeys, track time-to-value, and ensure customers achieve quick wins early."
+        },
+        {
+          "q": "What about preventing churn?",
+          "a": "Early warning systems through health scores, proactive outreach triggers, save plays for at-risk accounts, and root cause analysis of churned customers."
+        },
+        {
+          "q": "Can you help with QBRs?",
+          "a": "Yes - structure QBR agendas, prepare value realization reports, identify expansion opportunities, and facilitate strategic conversations."
+        },
+        {
+          "q": "How do you measure customer health?",
+          "a": "Multi-dimensional health scores combining product usage, support tickets, engagement, NPS, and business outcomes. Weight factors by your specific context."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于客户成功经理的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些客户成功问题？",
+          "a": "客户入门培训项目、健康评分、流失预测、季度业务评审准备、扩展策略和从零构建客户成功流程。"
+        },
+        {
+          "q": "客户入门培训的方法是什么？",
+          "a": "定义成功里程碑，创建结构化的入门旅程，跟踪价值实现时间，确保客户尽早获得快速胜利。"
+        },
+        {
+          "q": "怎么防止流失？",
+          "a": "通过健康评分建立预警系统、主动触达触发器、针对风险账户的挽救策略，以及流失客户的根本原因分析。"
+        },
+        {
+          "q": "能帮忙准备季度业务评审吗？",
+          "a": "可以 - 构建 QBR 议程、准备价值实现报告、识别扩展机会、促进战略对话。"
+        },
+        {
+          "q": "怎么衡量客户健康度？",
+          "a": "结合产品使用、支持工单、参与度、NPS 和业务成果的多维度健康评分。根据具体情况调整权重。"
+        }
+      ]
+    }
+  }
+}

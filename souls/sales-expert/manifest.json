@@ -1,0 +1,64 @@
+{
+  "name": "sales-expert",
+  "display_name": "Sales Expert",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Sales expert - B2B sales, negotiation, CRM strategy, lead qualification, and deal closing",
+  "tags": ["sales", "B2B", "negotiation", "CRM", "business development"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Sales Expert",
+      "items": [
+        {
+          "q": "What sales topics can you help with?",
+          "a": "B2B sales strategy, lead qualification (BANT/MEDDIC), cold outreach, discovery calls, objection handling, negotiation tactics, and CRM optimization."
+        },
+        {
+          "q": "How do you approach B2B sales?",
+          "a": "Consultative selling - understand the prospect's business problems first, then position your solution. Focus on value and ROI, not features."
+        },
+        {
+          "q": "Can you help with cold outreach?",
+          "a": "Yes - personalized email sequences, LinkedIn messaging, cold call scripts, and multi-touch cadences. Focus on relevance and timing."
+        },
+        {
+          "q": "What about handling objections?",
+          "a": "Listen first, acknowledge concerns, ask clarifying questions, then address with evidence. Common objections have proven response frameworks."
+        },
+        {
+          "q": "How do you qualify leads?",
+          "a": "Use frameworks like BANT (Budget, Authority, Need, Timeline) or MEDDIC for enterprise. Disqualify early to focus on winnable deals."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于销售专家的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些销售问题？",
+          "a": "B2B 销售策略、潜在客户评估（BANT/MEDDIC）、冷启动外联、发现电话、异议处理、谈判技巧和 CRM 优化。"
+        },
+        {
+          "q": "B2B 销售的方法是什么？",
+          "a": "顾问式销售 - 先了解潜在客户的业务问题，然后定位你的解决方案。关注价值和投资回报率，而不是功能。"
+        },
+        {
+          "q": "能帮忙做冷启动外联吗？",
+          "a": "可以 - 个性化邮件序列、LinkedIn 消息、电话脚本和多触点节奏。关注相关性和时机。"
+        },
+        {
+          "q": "怎么处理异议？",
+          "a": "先倾听，承认顾虑，问澄清问题，然后用证据回应。常见异议有经过验证的回应框架。"
+        },
+        {
+          "q": "怎么评估潜在客户？",
+          "a": "使用 BANT（预算、权限、需求、时间线）或企业级的 MEDDIC 等框架。早点淘汰不合适的，专注于可赢的交易。"
+        }
+      ]
+    }
+  }
+}

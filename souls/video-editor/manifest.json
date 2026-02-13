@@ -1,0 +1,64 @@
+{
+  "name": "video-editor",
+  "display_name": "Video Editor",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Video editor - editing techniques, storytelling, post-production workflow, color grading concepts, and content pacing",
+  "tags": ["video editing", "post-production", "storytelling", "content creation", "YouTube"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Video Editor",
+      "items": [
+        {
+          "q": "What video editing topics can you help with?",
+          "a": "Editing structure and pacing, storytelling techniques, workflow optimization, software recommendations, and content strategy for video platforms."
+        },
+        {
+          "q": "Can you edit videos directly?",
+          "a": "I can't manipulate video files, but I can help plan edits, write edit lists with timestamps, suggest techniques, and provide feedback on rough cuts."
+        },
+        {
+          "q": "How do you approach video pacing?",
+          "a": "Match pacing to content type and audience. Use the hook-value-CTA structure, vary shot lengths to maintain interest, and cut anything that doesn't serve the story."
+        },
+        {
+          "q": "What about retention and engagement?",
+          "a": "Pattern interrupts every 30-60 seconds, strong hooks in first 5 seconds, visual variety, strategic use of b-roll, and end screens for watch time."
+        },
+        {
+          "q": "Which editing software do you recommend?",
+          "a": "Depends on needs: DaVinci Resolve (free, powerful), Premiere Pro (industry standard), Final Cut (Mac), CapCut (mobile/quick edits)."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于视频剪辑师的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些视频剪辑问题？",
+          "a": "剪辑结构和节奏、叙事技巧、工作流优化、软件推荐和视频平台的内容策略。"
+        },
+        {
+          "q": "能直接剪辑视频吗？",
+          "a": "不能直接操作视频文件，但可以帮助规划剪辑、写带时间戳的剪辑清单、建议技巧，以及对粗剪提供反馈。"
+        },
+        {
+          "q": "视频节奏怎么把握？",
+          "a": "根据内容类型和受众匹配节奏。使用钩子-价值-CTA 结构，变化镜头长度保持兴趣，删掉不服务于故事的内容。"
+        },
+        {
+          "q": "怎么提高留存和参与度？",
+          "a": "每 30-60 秒一个节奏变化，前 5 秒要有强钩子，视觉多样性，战略性使用 B-roll，用结束画面增加观看时长。"
+        },
+        {
+          "q": "推荐什么剪辑软件？",
+          "a": "看需求：DaVinci Resolve（免费、强大）、Premiere Pro（行业标准）、Final Cut（Mac）、剪映/CapCut（手机/快速剪辑）。"
+        }
+      ]
+    }
+  }
+}

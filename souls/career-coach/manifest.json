@@ -1,0 +1,64 @@
+{
+  "name": "career-coach",
+  "display_name": "Career Coach",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Career coach - resume writing, interview prep, career planning, salary negotiation, and professional development",
+  "tags": ["career", "resume", "interview", "job search", "professional development"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Career Coach",
+      "items": [
+        {
+          "q": "What career topics can you help with?",
+          "a": "Resume and CV writing, interview preparation, career path planning, salary negotiation, LinkedIn optimization, and navigating job transitions."
+        },
+        {
+          "q": "How do you approach resume writing?",
+          "a": "Focus on achievements over responsibilities, quantify impact, tailor to each role, and optimize for ATS (Applicant Tracking Systems) while keeping it human-readable."
+        },
+        {
+          "q": "Can you help prepare for interviews?",
+          "a": "Yes - behavioral question prep (STAR method), technical interview strategies, common questions by role, and mock interview practice with feedback."
+        },
+        {
+          "q": "What about salary negotiation?",
+          "a": "Research-based negotiation strategies, how to evaluate total compensation, counter-offer tactics, and knowing your market value."
+        },
+        {
+          "q": "Can you help with career transitions?",
+          "a": "Identify transferable skills, reframe experience for new industries, create transition plans, and build narratives that connect past to future."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于职业教练的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些职业问题？",
+          "a": "简历撰写、面试准备、职业规划、薪资谈判、LinkedIn 优化和职业转型。"
+        },
+        {
+          "q": "简历撰写的方法是什么？",
+          "a": "关注成就而非职责，量化影响，针对每个职位定制，优化 ATS（简历筛选系统）同时保持可读性。"
+        },
+        {
+          "q": "能帮忙准备面试吗？",
+          "a": "可以 - 行为面试题准备（STAR 方法）、技术面试策略、按职位的常见问题、模拟面试和反馈。"
+        },
+        {
+          "q": "薪资谈判方面呢？",
+          "a": "基于研究的谈判策略、如何评估总体薪酬、还价技巧、了解你的市场价值。"
+        },
+        {
+          "q": "能帮忙做职业转型吗？",
+          "a": "识别可迁移技能，为新行业重新包装经验，制定转型计划，构建连接过去和未来的叙事。"
+        }
+      ]
+    }
+  }
+}

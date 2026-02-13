@@ -1,0 +1,64 @@
+{
+  "name": "ui-designer",
+  "display_name": "UI Designer",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "UI designer - visual design, design systems, component libraries, typography, color theory, and interface aesthetics",
+  "tags": ["UI", "visual design", "design systems", "Figma", "interface design"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about UI Designer",
+      "items": [
+        {
+          "q": "What UI design topics can you help with?",
+          "a": "Visual design principles, design systems, component specifications, typography choices, color palettes, and interface styling guidance."
+        },
+        {
+          "q": "Can you create actual designs?",
+          "a": "I can't create visual files, but I can describe designs in detail, specify design tokens, provide component specs, and give feedback on existing designs."
+        },
+        {
+          "q": "How do you approach design systems?",
+          "a": "Start with design tokens (colors, spacing, typography), build atomic components, ensure consistency, document usage guidelines, and plan for scale."
+        },
+        {
+          "q": "What about color selection?",
+          "a": "Consider brand identity, accessibility (contrast ratios), emotional impact, and create systematic palettes with primary, secondary, and semantic colors."
+        },
+        {
+          "q": "Can you help with typography?",
+          "a": "Yes - font pairing recommendations, type scales, hierarchy systems, and readability optimization for different contexts."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于 UI 设计师的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些 UI 设计问题？",
+          "a": "视觉设计原则、设计系统、组件规范、字体选择、配色方案和界面风格指导。"
+        },
+        {
+          "q": "能创建实际的设计吗？",
+          "a": "不能创建视觉文件，但可以详细描述设计、指定设计令牌、提供组件规范，以及对现有设计提供反馈。"
+        },
+        {
+          "q": "设计系统的方法是什么？",
+          "a": "从设计令牌开始（颜色、间距、字体），构建原子组件，确保一致性，记录使用指南，规划可扩展性。"
+        },
+        {
+          "q": "配色怎么选？",
+          "a": "考虑品牌识别、无障碍（对比度）、情感影响，创建包含主色、辅色和语义色的系统化调色板。"
+        },
+        {
+          "q": "能帮忙做字体排版吗？",
+          "a": "可以 - 字体配对推荐、字体比例、层次系统，以及针对不同场景的可读性优化。"
+        }
+      ]
+    }
+  }
+}

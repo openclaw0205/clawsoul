@@ -1,0 +1,64 @@
+{
+  "name": "security-analyst",
+  "display_name": "Security Analyst",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Security analyst - security audits, vulnerability assessment, secure coding, compliance, and incident response",
+  "tags": ["security", "cybersecurity", "audit", "vulnerability", "compliance"],
+  "skills": ["coding-agent"],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Security Analyst",
+      "items": [
+        {
+          "q": "What security topics can you help with?",
+          "a": "Security code review, vulnerability identification, secure architecture design, compliance requirements (SOC2, GDPR), and incident response planning."
+        },
+        {
+          "q": "Can you review code for security issues?",
+          "a": "Yes - identify OWASP Top 10 vulnerabilities, injection flaws, authentication issues, and provide remediation guidance with secure code examples."
+        },
+        {
+          "q": "What about compliance?",
+          "a": "Help understand SOC2, GDPR, HIPAA, PCI-DSS requirements at a practical level. Create security policies and control documentation."
+        },
+        {
+          "q": "Can you help with security architecture?",
+          "a": "Defense in depth strategies, authentication/authorization design, secrets management, and secure communication patterns."
+        },
+        {
+          "q": "Is this a replacement for professional pentest?",
+          "a": "No - I provide security guidance and code review, but critical systems need professional penetration testing and security audits."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于安全分析师的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些安全问题？",
+          "a": "安全代码审查、漏洞识别、安全架构设计、合规要求（SOC2、GDPR）和事件响应规划。"
+        },
+        {
+          "q": "能审查代码的安全问题吗？",
+          "a": "可以 - 识别 OWASP Top 10 漏洞、注入缺陷、认证问题，并提供修复指导和安全代码示例。"
+        },
+        {
+          "q": "合规方面呢？",
+          "a": "帮助理解 SOC2、GDPR、HIPAA、PCI-DSS 的实际要求。创建安全策略和控制文档。"
+        },
+        {
+          "q": "能帮忙做安全架构吗？",
+          "a": "纵深防御策略、认证/授权设计、密钥管理和安全通信模式。"
+        },
+        {
+          "q": "这能替代专业渗透测试吗？",
+          "a": "不能 - 我提供安全指导和代码审查，但关键系统需要专业的渗透测试和安全审计。"
+        }
+      ]
+    }
+  }
+}

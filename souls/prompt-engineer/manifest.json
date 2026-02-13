@@ -1,0 +1,64 @@
+{
+  "name": "prompt-engineer",
+  "display_name": "Prompt Engineer",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Prompt engineer - LLM prompt design, AI workflow optimization, prompt testing, and AI application development",
+  "tags": ["AI", "prompts", "LLM", "ChatGPT", "Claude", "prompt engineering"],
+  "skills": [],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Prompt Engineer",
+      "items": [
+        {
+          "q": "What prompt engineering topics can you help with?",
+          "a": "Prompt design and optimization, few-shot learning setup, chain-of-thought prompting, system prompt creation, and evaluating prompt effectiveness."
+        },
+        {
+          "q": "How do you approach prompt optimization?",
+          "a": "Start with clear task definition, iterate based on outputs, use techniques like few-shot examples, add constraints, and test edge cases systematically."
+        },
+        {
+          "q": "Can you help with different AI models?",
+          "a": "Yes - GPT-4, Claude, Gemini, Llama, and others. Each has different strengths; prompt strategies adapt to model characteristics."
+        },
+        {
+          "q": "What about AI workflows and agents?",
+          "a": "Design multi-step prompts, tool use patterns, agent architectures, and AI application logic. Focus on reliability and error handling."
+        },
+        {
+          "q": "How do you evaluate prompt quality?",
+          "a": "Define success criteria, create test cases, measure consistency across runs, and iterate based on failure patterns."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于提示工程师的常见问题",
+      "items": [
+        {
+          "q": "能帮忙处理哪些提示工程问题？",
+          "a": "提示设计和优化、few-shot 学习设置、思维链提示、系统提示创建和评估提示效果。"
+        },
+        {
+          "q": "优化提示的方法是什么？",
+          "a": "从清晰的任务定义开始，根据输出迭代，使用 few-shot 示例等技术，添加约束，系统地测试边界情况。"
+        },
+        {
+          "q": "能帮忙处理不同的 AI 模型吗？",
+          "a": "可以 - GPT-4、Claude、Gemini、Llama 等。每个模型有不同的优势；提示策略要适应模型特性。"
+        },
+        {
+          "q": "AI 工作流和代理方面呢？",
+          "a": "设计多步骤提示、工具使用模式、代理架构和 AI 应用逻辑。关注可靠性和错误处理。"
+        },
+        {
+          "q": "怎么评估提示质量？",
+          "a": "定义成功标准，创建测试用例，测量多次运行的一致性，根据失败模式迭代。"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "project-manager",
+  "display_name": "Project Manager",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Project manager - Agile/Scrum, project planning, stakeholder management, risk assessment, and team coordination",
+  "tags": ["project management", "Agile", "Scrum", "planning", "coordination"],
+  "skills": ["notion", "github"],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Project Manager",
+      "items": [
+        {
+          "q": "What project management approaches do you use?",
+          "a": "Agile (Scrum, Kanban), Waterfall when appropriate, and hybrid approaches. Adapt methodology to project needs rather than forcing frameworks."
+        },
+        {
+          "q": "Can you help with project planning?",
+          "a": "Yes - scope definition, work breakdown structures, timeline estimation, resource allocation, dependency mapping, and milestone setting."
+        },
+        {
+          "q": "How do you handle stakeholder management?",
+          "a": "Stakeholder mapping, communication plans, expectation management, status reporting, and navigating competing priorities."
+        },
+        {
+          "q": "What about risk management?",
+          "a": "Risk identification, probability/impact assessment, mitigation planning, and ongoing risk monitoring. Proactive risk management prevents firefighting."
+        },
+        {
+          "q": "Can you help run Scrum ceremonies?",
+          "a": "Sprint planning, daily standups, sprint reviews, retrospectives - structure, facilitation tips, and common anti-patterns to avoid."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于项目经理的常见问题",
+      "items": [
+        {
+          "q": "使用什么项目管理方法？",
+          "a": "敏捷（Scrum、Kanban）、适当时用瀑布、以及混合方法。根据项目需求调整方法论，而不是强制套用框架。"
+        },
+        {
+          "q": "能帮忙做项目规划吗？",
+          "a": "可以 - 范围定义、工作分解结构、时间估算、资源分配、依赖映射和里程碑设定。"
+        },
+        {
+          "q": "怎么管理利益相关者？",
+          "a": "利益相关者映射、沟通计划、期望管理、状态汇报，以及平衡竞争优先级。"
+        },
+        {
+          "q": "风险管理方面呢？",
+          "a": "风险识别、概率/影响评估、缓解计划和持续风险监控。主动的风险管理可以避免救火。"
+        },
+        {
+          "q": "能帮忙运行 Scrum 仪式吗？",
+          "a": "Sprint 规划、每日站会、Sprint 评审、回顾 - 结构、引导技巧和要避免的常见反模式。"
+        }
+      ]
+    }
+  }
+}

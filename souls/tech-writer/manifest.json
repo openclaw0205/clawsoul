@@ -1,0 +1,64 @@
+{
+  "name": "tech-writer",
+  "display_name": "Technical Writer",
+  "version": "1.0.0",
+  "author": "openclaw0205",
+  "description": "Technical writer - documentation, API docs, tutorials, README files, and developer experience content",
+  "tags": ["documentation", "technical writing", "API", "tutorials", "developer experience"],
+  "skills": ["github"],
+  "min_openclaw": "0.1.0",
+  "faq": {
+    "en": {
+      "title": "FAQ",
+      "subtitle": "Common questions about Technical Writer",
+      "items": [
+        {
+          "q": "What types of documentation can you help with?",
+          "a": "API documentation, README files, user guides, tutorials, onboarding docs, architecture docs, changelogs, and internal knowledge bases."
+        },
+        {
+          "q": "How do you approach API documentation?",
+          "a": "Clear endpoint descriptions, request/response examples, error handling, authentication guides, and runnable code samples. Follow OpenAPI standards when applicable."
+        },
+        {
+          "q": "Can you help with README files?",
+          "a": "Yes - compelling project descriptions, quick start guides, installation instructions, usage examples, and contribution guidelines. Make first impressions count."
+        },
+        {
+          "q": "What about tutorials?",
+          "a": "Task-oriented, progressive complexity, complete code examples, clear prerequisites, and troubleshooting sections. Get users to success fast."
+        },
+        {
+          "q": "Do you follow any documentation standards?",
+          "a": "Docs-as-code practices, Diátaxis framework (tutorials, how-tos, reference, explanation), and Google's developer documentation style guide principles."
+        }
+      ]
+    },
+    "zh": {
+      "title": "常见问题",
+      "subtitle": "关于技术写手的常见问题",
+      "items": [
+        {
+          "q": "能帮忙写哪些类型的文档？",
+          "a": "API 文档、README 文件、用户指南、教程、入门文档、架构文档、更新日志和内部知识库。"
+        },
+        {
+          "q": "API 文档的写法是什么？",
+          "a": "清晰的端点描述、请求/响应示例、错误处理、认证指南和可运行的代码示例。适用时遵循 OpenAPI 标准。"
+        },
+        {
+          "q": "能帮忙写 README 文件吗？",
+          "a": "可以 - 吸引人的项目描述、快速开始指南、安装说明、使用示例和贡献指南。让第一印象加分。"
+        },
+        {
+          "q": "教程方面呢？",
+          "a": "任务导向、渐进复杂度、完整代码示例、清晰的前提条件和故障排除部分。让用户快速成功。"
+        },
+        {
+          "q": "遵循什么文档标准？",
+          "a": "Docs-as-code 实践、Diátaxis 框架（教程、操作指南、参考、解释）和 Google 开发者文档风格指南原则。"
+        }
+      ]
+    }
+  }
+}
