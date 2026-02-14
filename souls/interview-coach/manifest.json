@@ -6,6 +6,7 @@
   "description_zh": "搞定任何面试 — 大厂、创业公司、或任何你想去的地方",
   "author": "openclaw0205",
   "tags": ["career", "interview", "job", "FAANG", "preparation"],
+  "skills": ["interview-prep", "resume-builder", "linkedin-automation", "salary-negotiation", "company-research", "leetcode-helper", "system-design-primer", "behavioral-questions"],
   "difficulty": "beginner",
   "faq": [
     {

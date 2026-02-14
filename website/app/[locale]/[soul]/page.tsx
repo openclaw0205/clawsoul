@@ -7,12 +7,14 @@ import FileTabs from "@/components/FileTabs";
 
 interface FaqItem {
   q: string;
+  q_zh?: string;
   a: string;
+  a_zh?: string;
 }
 
 interface FaqContent {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   items: FaqItem[];
 }
 
@@ -24,7 +26,7 @@ interface SoulManifest {
   description: string;
   tags: string[];
   skills: string[];
-  faq?: {
+  faq?: FaqItem[] | {
     en: FaqContent;
     zh: FaqContent;
   };
@@ -266,7 +268,7 @@ export default async function SoulPage({ params }: PageProps) {
           </div>
 
           {/* Required Skills */}
-          {manifest.skills.length > 0 && (
+          {(manifest.skills || []).length > 0 && (
             <div className="flex items-center gap-3">
               <span className="text-sm text-gray-500">
                 {t.detail.requiredSkills}
@@ -327,18 +329,34 @@ export default async function SoulPage({ params }: PageProps) {
 
         {/* ── Section 4: FAQ ── */}
         {(() => {
-          const faq = manifest.faq?.[locale] || t.faq;
+          // Handle both old format (faq.en/zh.items) and new format (faq array)
+          let faqItems: FaqItem[] = [];
+          let faqTitle = t.faq.title;
+          
+          if (Array.isArray(manifest.faq)) {
+            // New format: array of Q&A
+            faqItems = manifest.faq;
+          } else if (manifest.faq) {
+            // Old format: en/zh object
+            const faqData = manifest.faq[locale as keyof typeof manifest.faq] || manifest.faq.en || t.faq;
+            faqItems = faqData.items || [];
+            if (faqData.title) faqTitle = faqData.title;
+          } else {
+            // Fallback to translations
+            faqItems = t.faq.items || [];
+          }
+          
           return (
             <section>
               <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold text-white mb-2">
-                  {faq.title}
+                  {faqTitle}
                 </h2>
-                <p className="text-sm text-gray-500">{faq.subtitle}</p>
+                <p className="text-sm text-gray-500">{t.faq.subtitle}</p>
               </div>
               <div className="grid gap-4">
-                {faq.items.map(
-                  (item: { q: string; a: string }, index: number) => (
+                {faqItems.map(
+                  (item: FaqItem, index: number) => (
                     <div
                       key={index}
                       className="bg-gray-900 rounded-xl p-5 border border-gray-800"
@@ -349,10 +367,12 @@ export default async function SoulPage({ params }: PageProps) {
                         </div>
                         <div>
                           <h3 className="text-white font-medium mb-1.5">
-                            {item.q}
+                            {/* Show original Q, fallback to zh if locale is zh */}
+                            {(locale === "zh" && item.q_zh) ? item.q_zh : item.q}
                           </h3>
                           <p className="text-gray-400 text-sm leading-relaxed">
-                            {item.a}
+                            {/* Show translated A, fallback to zh if locale is zh */}
+                            {(locale === "zh" && item.a_zh) ? item.a_zh : item.a}
                           </p>
                         </div>
                       </div>

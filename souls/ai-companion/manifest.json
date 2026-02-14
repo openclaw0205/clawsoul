@@ -6,6 +6,7 @@
   "description_zh": "温暖、机智、高情商的 AI 伙伴",
   "author": "openclaw0205",
   "tags": ["companion", "emotional", "conversation", "friend"],
+  "skills": ["mood-tracker", "journal-prompts", "conversation-memory", "personality-engine", "sentiment-analysis", "daily-check-in"],
   "difficulty": "beginner",
   "faq": [
     {
