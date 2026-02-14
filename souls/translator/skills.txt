@@ -1,0 +1,7 @@
+# Translation & Localization
+deepl-integration
+google-translate
+language-detector
+cultural-adaptation
+terminology-manager
+multilingual-seo

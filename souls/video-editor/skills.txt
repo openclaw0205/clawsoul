@@ -1,0 +1,9 @@
+# Video Editing & Production
+ffmpeg-assistant
+video-transcription
+subtitle-generator
+thumbnail-generator
+color-grading
+audio-enhancement
+video-compression
+youtube-upload

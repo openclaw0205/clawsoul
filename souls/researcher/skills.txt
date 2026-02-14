@@ -1,0 +1,8 @@
+# Research & Academic
+arxiv-search
+paper-summarizer
+citation-manager
+literature-review
+research-methodology
+academic-writing
+google-scholar

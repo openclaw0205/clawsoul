@@ -1,2 +1,10 @@
+# DevOps & Infrastructure
 docker-essentials
 github
+kubernetes
+terraform
+aws-cli
+gcp-tools
+ci-cd-pipelines
+monitoring-alerts
+nginx-config

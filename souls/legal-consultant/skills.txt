@@ -1,0 +1,7 @@
+# Legal & Compliance
+contract-analyzer
+legal-research
+ip-basics
+gdpr-compliance
+terms-generator
+nda-templates

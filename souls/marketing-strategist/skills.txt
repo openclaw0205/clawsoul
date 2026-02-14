@@ -1,1 +1,9 @@
+# Marketing Strategy
 seo-audit
+google-analytics
+competitor-analysis
+market-research
+campaign-planner
+social-media-scheduler
+content-calendar
+ad-performance

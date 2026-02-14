@@ -1,0 +1,7 @@
+# Customer Success & Support
+zendesk
+intercom
+freshdesk
+helpscout
+customer-health-score
+churn-prediction

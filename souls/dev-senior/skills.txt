@@ -1,3 +1,9 @@
+# Senior Development
 coding-agent
 github
 docker-essentials
+code-review
+architecture-patterns
+backend-patterns
+debug-pro
+senior-architect

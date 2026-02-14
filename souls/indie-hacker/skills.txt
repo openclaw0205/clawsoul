@@ -1,2 +1,10 @@
+# Indie Hacker & Bootstrapping
 coding-agent
 seo-audit
+stripe
+analytics-dashboard
+landing-page-optimizer
+product-hunt-launcher
+twitter-poster
+email-marketing
+github

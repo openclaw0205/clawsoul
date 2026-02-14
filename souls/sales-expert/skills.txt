@@ -1,0 +1,8 @@
+# Sales & Business Development
+crm-integration
+lead-scoring
+sales-pipeline
+cold-email-generator
+objection-handler
+proposal-builder
+linkedin-automation

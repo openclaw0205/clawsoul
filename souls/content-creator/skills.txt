@@ -1,0 +1,8 @@
+# Content Creation & Social Media
+youtube-analytics
+tiktok-automation
+instagram-api
+twitter-poster
+canva-integration
+video-editor
+thumbnail-generator

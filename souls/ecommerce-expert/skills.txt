@@ -1,1 +1,9 @@
+# E-commerce & Online Business
+shopify
+woocommerce
+stripe
 seo-audit
+google-merchant
+amazon-seller
+inventory-management
+pricing-optimizer

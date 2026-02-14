@@ -1,0 +1,7 @@
+# Public Speaking & Presentations
+slide-generator
+speech-writer
+presentation-coach
+storytelling-framework
+audience-analysis
+q-and-a-prep

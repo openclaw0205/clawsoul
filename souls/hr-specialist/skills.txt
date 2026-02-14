@@ -1,0 +1,7 @@
+# Human Resources
+recruiting-automation
+employee-onboarding
+performance-review
+compensation-analysis
+hr-compliance
+interview-scheduler

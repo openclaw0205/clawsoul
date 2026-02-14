@@ -1,1 +1,9 @@
+# Security Analysis
 coding-agent
+vulnerability-scanner
+penetration-testing
+security-audit
+compliance-checker
+incident-response
+threat-modeling
+owasp-guidelines

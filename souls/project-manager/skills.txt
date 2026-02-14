@@ -1,2 +1,9 @@
+# Project Management
 notion
 github
+jira-integration
+gantt-charts
+resource-allocation
+risk-assessment
+agile-scrum
+slack

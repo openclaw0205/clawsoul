@@ -1,0 +1,8 @@
+# Startup Mentoring
+pitch-deck-builder
+fundraising-guide
+business-model-canvas
+investor-research
+cap-table-manager
+startup-legal-basics
+growth-metrics

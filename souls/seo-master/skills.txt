@@ -1,2 +1,10 @@
-web_search
-web_fetch
+# SEO & Search Optimization
+seo-audit
+keyword-research
+backlink-analyzer
+google-search-console
+serp-tracker
+technical-seo
+content-optimizer
+competitor-analysis
+schema-markup
