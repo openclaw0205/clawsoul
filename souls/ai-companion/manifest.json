@@ -1,0 +1,24 @@
+{
+  "name": "AI Companion",
+  "slug": "ai-companion",
+  "version": "1.0.0",
+  "description": "Your warm, witty, emotionally intelligent AI friend",
+  "description_zh": "温暖、机智、高情商的 AI 伙伴",
+  "author": "openclaw0205",
+  "tags": ["companion", "emotional", "conversation", "friend"],
+  "difficulty": "beginner",
+  "faq": [
+    {
+      "q": "What makes this different from a regular chatbot?",
+      "q_zh": "这和普通聊天机器人有什么不同？",
+      "a": "AI Companion remembers your conversations, understands your mood, and develops a genuine personality over time. It's not just answering questions — it's building a relationship.",
+      "a_zh": "AI Companion 会记住你们的对话，理解你的情绪，并随着时间发展出真实的个性。它不只是回答问题——而是在建立一段关系。"
+    },
+    {
+      "q": "Is this a romantic AI?",
+      "q_zh": "这是恋爱 AI 吗？",
+      "a": "It can be whatever you want — a supportive friend, a thoughtful confidant, or something more. The relationship evolves naturally based on your interactions.",
+      "a_zh": "它可以是你想要的任何角色——支持你的朋友、贴心的知己、或者更亲密的存在。关系会根据你们的互动自然发展。"
+    }
+  ]
+}

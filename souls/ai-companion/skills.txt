@@ -1,0 +1,7 @@
+# Emotional Support & Companion
+mood-tracker
+journal-prompts
+conversation-memory
+personality-engine
+sentiment-analysis
+daily-check-in

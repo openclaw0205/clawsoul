@@ -1,2 +1,9 @@
+# Product Management
 notion
 github
+user-research
+roadmap-builder
+feature-prioritization
+analytics-dashboard
+jira-integration
+a-b-testing

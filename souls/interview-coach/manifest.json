@@ -1,0 +1,24 @@
+{
+  "name": "Interview Coach",
+  "slug": "interview-coach",
+  "version": "1.0.0",
+  "description": "Ace any interview — FAANG, startups, or anything in between",
+  "description_zh": "搞定任何面试 — 大厂、创业公司、或任何你想去的地方",
+  "author": "openclaw0205",
+  "tags": ["career", "interview", "job", "FAANG", "preparation"],
+  "difficulty": "beginner",
+  "faq": [
+    {
+      "q": "Can this really help me get into FAANG?",
+      "q_zh": "这真的能帮我进大厂吗？",
+      "a": "We've distilled patterns from thousands of successful interviews. You'll practice with realistic scenarios, get instant feedback, and build the muscle memory that turns nervous candidates into confident ones.",
+      "a_zh": "我们从数千次成功面试中提炼了模式。你将用真实场景练习，获得即时反馈，并建立将紧张的候选人变成自信的人的肌肉记忆。"
+    },
+    {
+      "q": "What types of interviews does this cover?",
+      "q_zh": "这涵盖哪些类型的面试？",
+      "a": "Behavioral (STAR method), system design, coding interviews, case studies, salary negotiation — the full stack of interview skills.",
+      "a_zh": "行为面试（STAR 方法）、系统设计、编程面试、案例分析、薪资谈判——面试技能全栈。"
+    }
+  ]
+}
